@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com"> 
+	<title>DIMUN</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="logo.ico">
+
+	
+	<!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="Buttonsw3.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	
+</head>
+<body data-target="#nino-navbar;" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+<header id="nino-header">
+        
+		<div id="nino-headerInner">		
+            
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+            <a class="navbar-brand" href="index.html">DIMUN</a>
+
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+                        
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-right" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+                                
+                                <div class="nav navbar-nav dropdown">
+								<li class="dropbtn"><a href="Conference.html" onclick="conference();">Conference</a></li>
+                                    <br><br>
+                                    <div class="dropdown-content">
+                                        <a href="Conference.html" onclick="Secretariat();">Secretariat</a>
+                                        <a href="Conference.html" onclick="StudentOfficers();">Student Officers</a>
+                                        <a href="Conference.html" onclick="Delegatess();">Delegates</a>
+                                        <a href="Conference.html" onclick="ConferenceTheme();">Conference Theme</a>
+                                        <a href="Conference.html" onclick="StatementOfPurpose();">Statement Of Purpose</a>
+                                        <a href="Conference.html" onclick="MessageFromFounder();">Message From Founder</a>
+                                    </div>
+                                </div>
+                                <div class="nav navbar-nav dropdown">
+                                    <li class="dropbtn"><a  href="Committees.html" onclick="Committee();">Committees</a></li>
+                                    <br><br>
+                                   <div class="dropdown-content">
+                                        <a href="Committees.html" onclick="GeneralAssembly();">General Assembly</a>
+                                        <a href="Committees.html" onclick="EnviromentalCommision();">Enviroment Commision</a>
+                                        <a href="Committees.html" onclick="Economic();">Economic and Social Council</a>
+                                        <a href="Committees.html" onclick="HumanRights();">Human Rights Council</a>
+                                        <a href="Committees.html" onclick="Special();">Special Conference</a>
+                                        <a href="Committees.html" onclick="Disarmament();">Disarmament Commision</a>
+                                        <a href="Committees.html" onclick="Advisory();">Advisory Panel</a>
+                                        <a href="Committees.html" onclick="Security();">Security Council</a>
+                                    </div>
+                                </div>
+								<li><a href="Directors.html">Directors</a></li>
+								<li><a href="Transport.html">Transport/Accommodation</a></li>
+								<li><a href="Spotlight.html">Spotlight</a></li>
+								<li><a href="Schedule.html">Schedule</a></li>
+                                <li><a href="Press.html">Press & Media</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+	</header>
+    
+     
+    <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides2 w3-container">
+                    <br><br>
+                    <hr>
+                    <h1 align="center">Home Directory</h1>
+                    <hr>
+                    <center>
+                        <img src="images/ConferencePg/ConSecretariat.jpg" id="Secretariats" hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(2)">
+                        <img src="images/ConferencePg/ConStudentOf.jpg" id ="StudentOffs"hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(3)">
+                        <img src="images/ConferencePg/ConDelegate.jpg" id=Delegates hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(4)">
+                        <br><br>
+                        <img src="images/ConferencePg/ConTheme.jpg" id=theme hspace="0.5%"width="25%" class="demo imgbtn" onclick="currentDiv2(5)">
+                        <img src="images/ConferencePg/ConStatement.jpg"  id=statement hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(6)">
+                        <img src="images/ConferencePg/Founder.jpg" id=founder hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(7)">
+                    </center>
+                </div>
+        
+        
+                <div class="mySlides2 w3-container">
+                        <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+                        <section id="nino-services">
+                            <div class="container">
+                                <h2 class="nino-sectionHeading">
+                                    <span class="nino-subHeading">Meet Our</span>
+                                    Student Executive Officer Team
+                                </h2>
+                                <p align="center">The DIMUN conference is organised and run by an organising team made entirely of students, with the support of Dulwich College Beijing and MUN Directors. Leading this team and DIMUN VIII are the Executive Student Officers below:</p>
+
+                                <div class="sectionContent">
+
+                                                <div class="w3-content video" style="max-width:100%" >
+
+                                                    <div class="mySlides w3-container">
+                                                        <div class="fw" layout="row">
+
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <h1 class="nino-serviceTitle">Secretaries-General</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(2)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                <img class="demo imgbtn" onclick="currentDiv(3)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                            </div>
+
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <h1 class="nino-serviceTitle">Deputy Secretaries-General</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(4)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                <img class="demo imgbtn" onclick="currentDiv(5)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                            </div>
+
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <h1 class="nino-serviceTitle">Head of Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Head Of Press</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(6)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                <img class="demo imgbtn" onclick="currentDiv(7)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <center>
+                                                                <h1 class="nino-serviceTitle">Head of Tech</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(8)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                </center>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <center>
+                                                                <h1 class="nino-serviceTitle">Deputy-Head Admin</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(9)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                </center>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-4 col-sm-6 item ">
+                                                                <center>
+                                                                <h1 class="nino-serviceTitle">Junior Executive Member</h1>
+                                                                <img class="demo imgbtn" onclick="currentDiv(10)" src="images/Empty%20Frame.jpg" height=150px width=165px>
+                                                                </center>
+                                                            </div>
+                                                            
+                                                            
+ 
+                                                        </div>
+                                                            <br><br><br>
+
+                                                    </div>
+                                                    <div class="mySlides w3-container" height="75%">
+                                                            <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                            <h2>Jackel Cheung: Secretary-General</h2>
+                                                                <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Sunho Kwon: Secretary-General</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">"I am honored to be sg this year"</p>
+                                                                                    <span class="name">ICE MIKE</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                    </div>
+
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Jennifer Zhou: Deputy Secretary-General</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                    </div>
+
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Samuel Chan: Deputy Secretary-General</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                    </div>
+
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Ashley Wong: Head of Admin</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                    </div>
+
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Matthew Cui: Head of Press</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">I have been preparing for this position all my life; 16 years, 7 months and 10 days later I'm finally here. This will truly be a thrilling and magical chapter in the tale I call life.</p>
+                                                                                    <span class="name">Baoniball</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                    
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Shenyi Cui: Head of Tech</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                    
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Jeffrey Liang: Deputy-Head Admin</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                    
+                                                    <div class="mySlides w3-container" height="75%">
+                                                        <button class="w3-button demo w3-black" onclick="currentDiv(1)">Back</button>
+                                                        <h2>Kevin Yao: Junior Executive Member</h2>
+                                                        <div class="nino-testimonialSlider">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div layout="row" class="verticalCenter">
+                                                                                <div class="nino-avatar fsr">
+                                                                                    <img class="img-circle img-thumbnail" src="images/Empty%20Frame.jpg" alt="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                                                                    <span class="name">Joshua Earle</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                    </div>
+                                                </div>
+                                </div>
+                            </div>
+                        </section>                  
+                </div>
+        
+        <div class="mySlides2 w3-container">
+            <button class="w3-button demo w3-black" id=homedir onclick="currentDiv2(1)">Home Directory</button>
+            <h1 align="center">Student Officers</h1>
+        </div>
+
+        <div class="mySlides2 w3-container">
+            <button class="w3-button demo w3-black"  onclick="currentDiv2(1)">Home Directory</button>
+            <h1 align="center">Delegates</h1>
+        </div>
+        
+        <div class="mySlides2 w3-container">
+            <button class="w3-button demo w3-black"  onclick="currentDiv2(1)">Home Directory</button>
+            <h1 align="center">Conference Theme</h1>
+        </div>
+        
+        <div class="mySlides2 w3-container">
+            <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+            <h1 align="center">Statement Of Purpose</h1>
+        </div>
+
+        <div class="mySlides2 w3-container">
+            <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+            <h1 align="center">Message From Founder</h1>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+    
+        <script>
+
+    if (window.performance) 
+            {
+                console.info("window.performance work's fine on this browser");
+            }
+        if (performance.navigation.type == 1) 
+            {
+                localStorage.setItem("Conferencebtn","");
+                console.info( "This page is reloaded" );
+            } 
+        else 
+            {
+                console.info( "This page is not reloaded");
+            }  
+            
+            
+                    
+        if (localStorage.getItem("Conferencebtn")=="Secretariat")
+            {
+                document.getElementById("Secretariats").click();
+            }
+        else if (localStorage.getItem("Conferencebtn")=="StudentOff")
+            {
+                document.getElementById("StudentOffs").click();
+            }
+        else if (localStorage.getItem("Conferencebtn")=="Delegate")
+            {
+                document.getElementById("Delegates").click();
+            }
+        else if (localStorage.getItem("Conferencebtn")=="theme")
+            {
+                document.getElementById("theme").click();
+            }
+        else if (localStorage.getItem("Conferencebtn")=="statement")
+            {
+                document.getElementById("statement").click();
+            }
+        else if (localStorage.getItem("Conferencebtn")=="founder")
+            {
+                document.getElementById("founder").click();
+            }
+        else
+            {
+                document.getElementById("homedir").click();
+            }
+
+
+           
+    </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com"> 
+	<title>DIMUN</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="logo.ico">
+	
+	<!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+     <link rel="stylesheet" type="text/css" href="Buttonsw3.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	
+</head>
+<body data-target="#nino-navbar;" data-spy="scroll" style="background-color: aliceblue">
+
+	<!-- Header
+    ================================================== -->
+<header id="nino-header">
+        
+		<div id="nino-headerInner">		
+            
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+            <a class="navbar-brand" href="index.html">DIMUN</a>
+
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+                        
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-right" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+                                
+                                <div class="nav navbar-nav dropdown">
+								<li class="dropbtn"><a href="Conference.html" onclick="conference();">Conference</a></li>
+                                    <br><br>
+                                    <div class="dropdown-content">
+                                        <a href="Conference.html" onclick="Secretariat();">Secretariat</a>
+                                        <a href="Conference.html" onclick="StudentOfficers();">Student Officers</a>
+                                        <a href="Conference.html" onclick="Delegates();">Delegates</a>
+                                        <a href="Conference.html" onclick="ConferenceTheme();">Conference Theme</a>
+                                        <a href="Conference.html" onclick="StatementOfPurpose();">Statement Of Purpose</a>
+                                        <a href="Conference.html" onclick="MessageFromFounder();">Message From Founder</a>
+                                    </div>
+                                </div>
+                                <div class="nav navbar-nav dropdown">
+                                    <li class="dropbtn"><a  href="Committees.html" onclick="Committee();">Committees</a></li>
+                                    <br><br>
+                                    <div class="dropdown-content">
+                                        <a href="Committees.html" onclick="GeneralAssembly();">General Assembly</a>
+                                        <a href="Committees.html" onclick="EnviromentalCommision();">Enviroment Commision</a>
+                                        <a href="Committees.html" onclick="Economic();">Economic and Social Council</a>
+                                        <a href="Committees.html" onclick="HumanRights();">Human Rights Council</a>
+                                        <a href="Committees.html" onclick="Special();">Special Conference</a>
+                                        <a href="Committees.html" onclick="Disarmament();">Disarmament Commision</a>
+                                        <a href="Committees.html" onclick="Advisory();">Advisory Panel</a>
+                                        <a href="Committees.html" onclick="Security();">Security Council</a>
+                                    </div>
+                                </div>
+								<li><a href="Directors.html">Directors</a></li>
+								<li><a href="Transport.html">Transport/Accommodation</a></li>
+								<li><a href="Spotlight.html">Spotlight</a></li>
+								<li><a href="Schedule.html">Schedule</a></li>
+                                <li><a href="Press.html">Press & Media</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+	</header>
+    
+    
+    <div class="w3-content" style="max-width: 100%">
+        <div class="mySlides w3-container">
+            <br><br>
+            <hr>
+            <h1 align="center">Home Directory</h1>
+            <hr>
+            <center>
+            <img src="images/CommitteePg/GeneralAssembly.jpg" onclick="currentDiv(2)" class="demo imgbtn" width="24%" id=generalassembly>
+            <img src="images/CommitteePg/EnviromentalCommision.jpg" onclick="currentDiv(3)" class="demo imgbtn" width="24%" id=enviromental>
+            <img src="images/CommitteePg/EconomicAnd%20SocialCouncil.jpg" onclick="currentDiv(4)" class="demo imgbtn" width="24%" id=economicsocialcouncil>
+            <img src="images/CommitteePg/HumanRightsCouncil.jpg" onclick="currentDiv(5)" class="demo imgbtn" width="24%"id=humanrights>
+            <br><br>
+            <img src="images/CommitteePg/SpecialCouncil.jpg" onclick="currentDiv(6)" class="demo imgbtn" width="24%"id=specialcouncil>
+            <img src="images/CommitteePg/DisarmamentCommittee.jpg" onclick="currentDiv(7)" class="demo imgbtn" width="24%" id=disarmament>
+            <img src="images/CommitteePg/AdvisoryPanel.jpg" onclick="currentDiv(8)" class="demo imgbtn" width="24%" id=advisory>
+            <img src="images/CommitteePg/SecurityCouncil.jpg" onclick="currentDiv(9)" class="demo imgbtn" width="24%" id=security>
+            </center>
+        </div>
+        
+        
+        <div class="mySlides w3-container">
+            
+            <button class="demo w3-button w3-black" id=homedir onclick=currentDiv(1)>Home Directory</button>
+            
+            <img src="images/CommitteePg/GeneralAssemblyHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(1)>Topic</button>
+                <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides2 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides2 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive1>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsUTF4dExKQTVXYnc#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/EnviromentalConmmisionHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(1)>Topic</button>
+                <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides3 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides3 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive2>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsUkh5LWo0M3BveEU#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/EconomicAndSocialCouncilHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(1)>Topic</button>
+                <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides4 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides4 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive3>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsRUNZOGZtaGZsT28#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/HumanRightsCouncilHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(1)>Topic</button>
+                <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides5 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides5 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive4>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsXzFLdE9UZ3VZQnc#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/SpecialCouncilHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(1)>Topic</button>
+                <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides6 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides6 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive5>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsYkgzcjd6c2lnWkE#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/DisarmamentCommitteeHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(1)>Topic</button>
+                <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides7 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides7 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive6>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsWEdZSXdpbmw2Q1E#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/AdvisoryPanelHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(1)>Topic</button>
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides8 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides8 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive7>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsakZ3RXZ5d2EyZDQ#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+            <img src="images/CommitteePg/SecurityCouncilHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(1)>Topic</button>
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides9 w3-container">
+                    <h1>Topic</h1>
+                </div>
+                <div class="mySlides9 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive8>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV2J1UkRmMl9NT2M#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+    
+    <script>
+        if (window.performance) 
+            {
+                console.info("window.performance work's fine on this browser");
+            }
+        if (performance.navigation.type == 1) 
+            {
+                localStorage.setItem("CommitteeBtn","");
+                console.info( "This page is reloaded" );
+            } 
+        else 
+            {
+                console.info( "This page is not reloaded");
+            } 
+    carousel();
+
+function carousel() 
+    {
+    setTimeout(carousel, 10000); // Change image every 2 seconds
+    $('#drive1').load(document.URL +  ' #drive1');
+    $('#drive2').load(document.URL +  ' #drive2');
+    $('#drive3').load(document.URL +  ' #drive3');
+    $('#drive4').load(document.URL +  ' #drive4');
+    $('#drive5').load(document.URL +  ' #drive5');
+    $('#drive6').load(document.URL +  ' #drive6');
+    $('#drive7').load(document.URL +  ' #drive7');
+    $('#drive8').load(document.URL +  ' #drive8');
+    }
+        
+        if (localStorage.getItem("CommitteeBtn")=="GeneralAssembly")
+            {
+                document.getElementById("generalassembly").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="EnviromentalCommision")
+            {
+                document.getElementById("enviromental").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="Economic")
+            {
+                document.getElementById("economicsocialcouncil").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="HumanRights")
+            {
+                document.getElementById("humanrights").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="Special")
+            {
+                document.getElementById("specialcouncil").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="Disarmament")
+            {
+                document.getElementById("disarmament").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="Advisory")
+            {
+                document.getElementById("advisory").click();
+            }
+        else if (localStorage.getItem("CommitteeBtn")=="Security")
+            {
+                document.getElementById("security").click();
+            }
+        else
+            {
+                document.getElementById("homedir").click();
+            }
+    
+        
+    </script>
+</body>
+</html>
