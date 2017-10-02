@@ -6,7 +6,7 @@
 /* ============================== DEFAULT HTML ============================== */
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
-@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400i');
 html, body {
 	line-height: 1.7;
 	margin: 0;
@@ -202,7 +202,7 @@ img.img-full-width {
 	background: rgba(243,129,129,0.9); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
 	background: -webkit-linear-gradient(top, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
 	background: -o-linear-gradient(top, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	background: linear-gradient(to bottom, rgba(243, 144, 79, 0.41), rgba(59, 67, 113, 0.41)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to bottom, rgba(28, 181, 224, 0.41), rgba(0, 0, 70, 0.41)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .nino-hoverEffect .item:hover .overlay {
 	left: -10px;
@@ -243,10 +243,10 @@ img.img-full-width {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(243,129,129,0.7); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+	background:  rgba(28, 181, 224, 1); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
 	background: -webkit-linear-gradient(top, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	background: -o-linear-gradient(top, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	background: linear-gradient(to bottom, rgba(243, 144, 79, 0.41), rgba(59, 67, 113, 0.41)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 70, 0.15), rgba(28, 181, 224, 0.15));
+	background: linear-gradient(to bottom, rgba(0, 0, 70, 0.5), rgba(28, 181, 224, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #nino-headerInner {
 	position: relative;
@@ -360,9 +360,8 @@ img.img-full-width {
 	top: 0;
 	left: 0;
     width: 100%;
-    background: #F3904F no-repeat center center / cover;
-    background: -webkit-linear-gradient(to right, #3B4371, #F3904F) no-repeat center center / cover; /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3B4371, #F3904F) no-repeat center center / cover;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(28, 181, 224, 1) no-repeat center center / cover; /* fallback for old browsers */
+    
 
     z-index: 2;
     -webkit-animation-duration: .5s;
@@ -437,7 +436,7 @@ section {
 	display: block;
 	text-transform: none;
 	font-weight: 400;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	margin-bottom: 20px;
 }
