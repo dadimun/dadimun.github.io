@@ -234,7 +234,6 @@ img.img-full-width {
 #nino-header {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background: url(../images/bg-header.jpg) no-repeat center center / cover;
 }
 #nino-header:after {
 	content: "";
