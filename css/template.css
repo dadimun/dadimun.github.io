@@ -6,7 +6,9 @@
 /* ============================== DEFAULT HTML ============================== */
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
-@import url('https://fonts.googleapis.com/css?family=Raleway:400i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i');
+
 html, body {
 	line-height: 1.7;
 	margin: 0;
@@ -18,7 +20,7 @@ body {
 	font-weight: 400;
 	overflow-x: hidden;
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main { 
     display: block;
@@ -59,14 +61,22 @@ a[class*="glyphicon-"] {
 	text-decoration: none;
 }
 /* =============== DEFAULT HTML - HEADING STYLES =============== */
-h1, h2, h3, h5, h6 {
+h1
+{
+	margin: 5px 0 10px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h2, h3, h5, h6 {
+	 
 	margin: 5px 0 10px;
 	color: #333;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 }
 h1, h2 {
-	font-weight: 300;
+	font-weight: 700;
 }
 h1 {
 	font-size: 2.2em;
@@ -172,7 +182,7 @@ img.img-full-width {
 	text-align: center;
 }
 .nino-hoverEffect .item {
-	background: #95e1d3;
+	background: black;
 	display: inline-block;
 }
 .nino-hoverEffect .item .overlay {
@@ -234,6 +244,8 @@ img.img-full-width {
 #nino-header {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
+	background: url(../images/bg-header.jpg) no-repeat center center / cover;
+
 }
 #nino-header:after {
 	content: "";
@@ -242,10 +254,7 @@ img.img-full-width {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background:  rgba(28, 181, 224, 1); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(top, rgba(243,129,129,0.9), rgba(252, 227, 138, 0.9));
-	background: -o-linear-gradient(top, rgba(0, 0, 70, 0.15), rgba(28, 181, 224, 0.15));
-	background: linear-gradient(to bottom, rgba(0, 0, 70, 0.5), rgba(28, 181, 224, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #nino-headerInner {
 	position: relative;
@@ -271,7 +280,7 @@ img.img-full-width {
 }
 #nino-slider .carousel-indicators li,
 #nino-slider .carousel-indicators li.active {
-	float: left;
+	left: 30%;
 	width: 25%;
 	height: auto;
 	margin: 0;	
@@ -359,7 +368,7 @@ img.img-full-width {
 	top: 0;
 	left: 0;
     width: 100%;
-    background: rgba(28, 181, 224, 1) no-repeat center center / cover; /* fallback for old browsers */
+    background: url(../images/bg-header.jpg) no-repeat center center / cover; /* fallback for old browsers */
     
 
     z-index: 2;
@@ -402,17 +411,18 @@ section {
 	padding: 80px 0;
 }
 #nino-slider .nino-sectionHeading {
-	font-size: 110px;
+	font-size: 90px;
 	color: #fff;
 }
 #nino-slider .nino-sectionHeading .nino-subHeading {
-	font-size: 55px;
+	font-size: 30px;
 }
 #nino-slider .nino-sectionHeading:after {
 	background: #fff;
 }
 .nino-sectionHeading {
 	font-weight: 700;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	line-height: 1;
 	position: relative;
@@ -434,7 +444,6 @@ section {
 .nino-sectionHeading .nino-subHeading {
 	display: block;
 	text-transform: none;
-	font-weight: 400;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	margin-bottom: 20px;
@@ -456,7 +465,7 @@ section {
 /* =============== SECTION COUNTING =============== */
 #nino-counting {
 	padding: 0;
-	background: #95e1d3;
+	background: black;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: #fff;
@@ -804,6 +813,40 @@ section {
 	top: 2px;
 }
 /* =============== SECTION MAP =============== */
+#nino-map4 {
+	padding: 40px 0;
+	background: url(../images/map/bg-map.jpg) no-repeat center center / cover;
+}
+#nino-map4 .nino-sectionHeading {
+	color: #f28989;
+	margin: 0;
+	cursor: pointer;
+}
+#nino-map4 .nino-sectionHeading .nino-icon {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+#nino-map4 .mapWrap {
+	visibility: hidden;
+	opacity: 0;
+	height: 0 !important;
+	margin-top: 20px;
+}
+#nino-map4 .mapWrap iframe {
+	width: 100%;
+	height: 500px;
+}
+#nino-map4.showMap .mapWrap {
+	visibility: visible;
+	opacity: 1;
+	height: auto !important;
+	border: 2px solid #ff9c00;
+}
+#nino-map4 .nino-locationInfo {
+	width: 250px;
+}
+
 #nino-map {
 	padding: 40px 0;
 	background: url(../images/map/bg-map.jpg) no-repeat center center / cover;
@@ -835,6 +878,41 @@ section {
 	border: 2px solid #ff9c00;
 }
 #nino-map .nino-locationInfo {
+	width: 250px;
+}
+
+
+#nino-map3 {
+	padding: 40px 0;
+	background: url(../images/map/bg-map.jpg) no-repeat center center / cover;
+}
+#nino-map3 .nino-sectionHeading {
+	color: #f28989;
+	margin: 0;
+	cursor: pointer;
+}
+#nino-map3 .nino-sectionHeading .nino-icon {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+#nino-map3 .mapWrap {
+	visibility: hidden;
+	opacity: 0;
+	height: 0 !important;
+	margin-top: 20px;
+}
+#nino-map3 .mapWrap iframe {
+	width: 100%;
+	height: 500px;
+}
+#nino-map3.showMap .mapWrap {
+	visibility: visible;
+	opacity: 1;
+	height: auto !important;
+	border: 2px solid #ff9c00;
+}
+#nino-map3 .nino-locationInfo {
 	width: 250px;
 }
 /* =============== LAYOUT - FOOTER AREA =============== */

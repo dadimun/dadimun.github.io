@@ -10,6 +10,16 @@ jQuery(function($) {
 		$("#nino-map").toggleClass("showMap");
 		$(this).find(".text").toggle();
 	});
+	
+	$("#nino-map4 .nino-sectionHeading").click(function(){
+		$("#nino-map4").toggleClass("showMap");
+		$(this).find(".text").toggle();
+	});
+	
+	$("#nino-map3 .nino-sectionHeading").click(function(){
+		$("#nino-map3").toggleClass("showMap");
+		$(this).find(".text").toggle();
+	});
 
 	/* =============== TESTIMONIAL SLIDER =============== */
 	$('.nino-testimonialSlider').unslider({
