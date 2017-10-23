@@ -613,6 +613,7 @@ section {
 	font-weight: 300;
 	font-style: italic;
 	margin-bottom: 10px;
+	color:black;
 }
 .nino-testimonialSlider .name {
     font-family: 'Kaushan Script', cursive;
@@ -1601,4 +1602,37 @@ div.figure {
 
 img.scaled {
   width: 100%;
+}
+.SUNHO
+{
+ 	position: relative;
+	right: 14em;
+
+}
+.JACKEL
+{
+ 	position: relative;
+	left: 14em;
+
+}
+.listOfOfficers .listOfOfficersTitle
+{
+	color:black;
+}
+.MessageFromFounder
+{
+	font-size: 18px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 19px;
+	color:black;
+	padding-left: 15em;
+	padding-right: 15em;
+}
+.committeeText
+{
+	font-size: 18px;
+	color:black;
+	
 }

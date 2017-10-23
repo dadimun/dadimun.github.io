@@ -136,6 +136,10 @@ jQuery(function($) {
             {
                 localStorage.setItem("CommitteeBtn","GeneralAssembly")
             }
+		function GeneralAssembly2()
+            {
+                localStorage.setItem("CommitteeBtn","GeneralAssembly2")
+            }
         function EnviromentalCommision()
             {
                 localStorage.setItem("CommitteeBtn","EnviromentalCommision")

@@ -29,7 +29,9 @@
     ================================================== -->
 <header id="nino-header">
         
-		<div id="nino-headerInner">		
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div id="nino-headerInner">		
             
 			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
             <a class="navbar-brand" href="index.html">DIMUN</a>
@@ -68,12 +70,13 @@
                                     <li class="dropbtn"><a  href="Committees.html" onclick="Committee();">Committees</a></li>
                                     <br><br>
                                     <div class="dropdown-content">
-                                        <a href="Committees.html" onclick="GeneralAssembly();">General Assembly</a>
-                                        <a href="Committees.html" onclick="EnviromentalCommision();">Enviroment Commision</a>
+                                        <a href="Committees.html" onclick="GeneralAssembly();">General Assembly 1</a>
+                                        <a href="Committees.html" onclick="GeneralAssembly2();">General Assembly 2</a>
+                                        <a href="Committees.html" onclick="EnviromentalCommision();">Enviroment Commission</a>
                                         <a href="Committees.html" onclick="Economic();">Economic and Social Council</a>
                                         <a href="Committees.html" onclick="HumanRights();">Human Rights Council</a>
                                         <a href="Committees.html" onclick="Special();">Special Conference</a>
-                                        <a href="Committees.html" onclick="Disarmament();">Disarmament Commision</a>
+                                        <a href="Committees.html" onclick="Disarmament();">Disarmament Commission</a>
                                         <a href="Committees.html" onclick="Advisory();">Advisory Panel</a>
                                         <a href="Committees.html" onclick="Security();">Security Council</a>
                                     </div>
@@ -82,7 +85,7 @@
 								<li><a href="Transport.html">Transport/Accommodation</a></li>
 								<li><a href="Spotlight.html">Spotlight</a></li>
 								<li><a href="Schedule.html">Schedule</a></li>
-                                <li><a href="Press.html">Press & Media</a></li>
+                                <li><a href="Press.html">Press</a></li>
                                 <li><a href="Contact.html">Contact Us</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
@@ -102,14 +105,15 @@
             <hr>
             <center>
             <img src="images/CommitteePg/GeneralAssembly.jpg" onclick="currentDiv(2)" class="demo imgbtn" width="24%" id=generalassembly>
-            <img src="images/CommitteePg/EnviromentalCommision.jpg" onclick="currentDiv(3)" class="demo imgbtn" width="24%" id=enviromental>
+            <img src="images/CommitteePg/GeneralAssembly.jpg" onclick="currentDiv(10)" class="demo imgbtn" width="24%" id=generalassembly2>
+            <img src="images/CommitteePg/EnviromentalCommision.jpg" onclick="currentDiv(3)" class="demo imgbtn" width="24%" id=enviromental><br><br>
             <img src="images/CommitteePg/EconomicAnd%20SocialCouncil.jpg" onclick="currentDiv(4)" class="demo imgbtn" width="24%" id=economicsocialcouncil>
             <img src="images/CommitteePg/HumanRightsCouncil.jpg" onclick="currentDiv(5)" class="demo imgbtn" width="24%"id=humanrights>
-            <br><br>
-            <img src="images/CommitteePg/SpecialCouncil.jpg" onclick="currentDiv(6)" class="demo imgbtn" width="24%"id=specialcouncil>
+            <img src="images/CommitteePg/SpecialCouncil.jpg" onclick="currentDiv(6)" class="demo imgbtn" width="24%"id=specialcouncil><br><br>
             <img src="images/CommitteePg/DisarmamentCommittee.jpg" onclick="currentDiv(7)" class="demo imgbtn" width="24%" id=disarmament>
             <img src="images/CommitteePg/AdvisoryPanel.jpg" onclick="currentDiv(8)" class="demo imgbtn" width="24%" id=advisory>
             <img src="images/CommitteePg/SecurityCouncil.jpg" onclick="currentDiv(9)" class="demo imgbtn" width="24%" id=security>
+            
             </center>
         </div>
         
@@ -120,12 +124,20 @@
             
             <img src="images/CommitteePg/GeneralAssemblyHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(1)>Topic</button>
+                <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(1)>Topics</button>
                 <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides2 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Question of cyber security and measures to prevent cyber warfare<br><br>
+					2. Measure to combat rise in terrorism in relation to religious extremists<br><br>
+					3. Question of children in armed conflicts<br><br>
+					4. Question of the disposal of nuclear waste<br><br>
+					</p>
                 </div>
                 <div class="mySlides2 w3-container">
                     <h1>Collaboration Space</h1>
@@ -140,12 +152,20 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/EnviromentalConmmisionHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(1)>Topic</button>
+                <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(1)>Topics</button>
                 <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides3 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Measures to prevent the resurgence of dormant pathogens as a result of climate change<br><br>
+					2. Measures to reduce industrial impact on marine biodiversity<br><br>
+					3. Measures to mitigate the damage of climate change disasters<br><br>
+					4. The Role of Multinational Corporations on Sustainable Development<br><br>
+					</p>
                 </div>
                 <div class="mySlides3 w3-container">
                     <h1>Collaboration Space</h1>
@@ -160,12 +180,20 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/EconomicAndSocialCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(1)>Topic</button>
+                <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(1)>Topics</button>
                 <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides4 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Measures to prevent exploitation of developing markets by MNCs in West Africa<br><br>
+					2. Measures to overcome growing poverty and social inequality in Turkey<br><br>
+					3. Combatting global food insecurity <br><br>
+					4. Measures to reduce youth unemployment in the Eurozone<br><br>
+					</p>
                 </div>
                 <div class="mySlides4 w3-container">
                     <h1>Collaboration Space</h1>
@@ -180,12 +208,20 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/HumanRightsCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(1)>Topic</button>
+                <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(1)>Topics</button>
                 <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides5 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Measures to protect the rights of persecuted peoples within Myanmar<br><br>
+					2. Protecting the rights of people affected by terrorism in the Horn of Africa<br><br>
+					3. Measures to address the humanitarian issue in the Philippines as a result of the Drug War  <br><br>
+					4. Combatting child trafficking in Southeast Asia<br><br>
+					</p>
                 </div>
                 <div class="mySlides5 w3-container">
                     <h1>Collaboration Space</h1>
@@ -200,12 +236,20 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/SpecialCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(1)>Topic</button>
+                <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(1)>Topics</button>
                 <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides6 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. The Situation in Kurdistan <br><br>
+					2. Measures to address the Kashmir Conflict <br><br>
+					3. Questions on Israel-Palestine Border <br><br>
+					4. Measures to resolve territorial disputes in the East China Sea<br><br>
+					</p>
                 </div>
                 <div class="mySlides6 w3-container">
                     <h1>Collaboration Space</h1>
@@ -220,12 +264,20 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/DisarmamentCommitteeHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(1)>Topic</button>
+                <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(1)>Topics</button>
                 <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides7 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Question of non-proliferation of nuclear weapons  <br><br>
+					2. Combatting the illicit trade in Small Arms and Light Weapons<br><br>
+					3. Preventing the militarization of the Arctic Circle<br><br>
+					4. Combatting proliferation of chemical and biological weapons with emphasis on the risk of acquisition by the non-   state actors<br><br>
+					</p>
                 </div>
                 <div class="mySlides7 w3-container">
                     <h1>Collaboration Space</h1>
@@ -240,12 +292,19 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/AdvisoryPanelHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(1)>Topic</button>
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(1)>Topics</button>
                 <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides8 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Measures to resolve territorial disputes in the South China Sea <br><br>
+					2. Addressing the humanitarian issue in the Democratic People's Republic of Korea <br><br>
+					3. Combatting the potential threat of an arms race in Asia<br><br>
+					</p>
                 </div>
                 <div class="mySlides8 w3-container">
                     <h1>Collaboration Space</h1>
@@ -261,17 +320,54 @@
             <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
             <img src="images/CommitteePg/SecurityCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(1)>Topic</button>
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(1)>Topics</button>
                 <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(2)>Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides9 w3-container">
-                    <h1>Topic</h1>
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+						1. The Situation in the Korean peninsula<br><br>
+						2. Question of Non-State Actors as a Danger to International Peace and Security <br><br>
+						3. The Situation in Catalonia <br><br>
+					</p>
                 </div>
                 <div class="mySlides9 w3-container">
                     <h1>Collaboration Space</h1>
                     <div id=drive8>
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV2J1UkRmMl9NT2M#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides w3-container">
+            
+            <button class="demo w3-button w3-black" id=homedir onclick=currentDiv(1)>Home Directory</button>
+            
+            <img src="images/CommitteePg/GeneralAssemblyHeader.png" width=100%>
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick=currentDiv10(1)>Topics</button>
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick=currentDiv10(2)>Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides10 w3-container">
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Combating international financial crimes <br><br>
+					2. Economic Development in Central Asia<br><br>
+					3. Maintaining Sustainable Tourism industries in LEDCs<br><br>
+					4. Measures to regulate and stabilize cryptocurrencies<br><br>
+					</p>
+                </div>
+                <div class="mySlides10 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id=drive9>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV1JJa2l0SEh5RXM#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -317,12 +413,17 @@ function carousel()
     $('#drive6').load(document.URL +  ' #drive6');
     $('#drive7').load(document.URL +  ' #drive7');
     $('#drive8').load(document.URL +  ' #drive8');
+	$('#drive9').load(document.URL +  ' #drive9');
     }
         
         if (localStorage.getItem("CommitteeBtn")=="GeneralAssembly")
             {
                 document.getElementById("generalassembly").click();
             }
+		else if (localStorage.getItem("CommitteeBtn")=="GeneralAssembly2")
+            {
+                document.getElementById("generalassembly2").click();
+			}
         else if (localStorage.getItem("CommitteeBtn")=="EnviromentalCommision")
             {
                 document.getElementById("enviromental").click();
