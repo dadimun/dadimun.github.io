@@ -1488,18 +1488,17 @@ html {
 
 .committeeItem
 {
-background: -moz-linear-gradient(359deg, rgba(237,198,119,1) 0%, rgba(237,198,119,1) 18%, rgba(26,163,255,1) 56%, rgba(26,163,255,1) 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(237,198,119,1)), color-stop(18%, rgba(237,198,119,1)), color-stop(56%, rgba(26,163,255,1)), color-stop(100%, rgba(26,163,255,1))); /* safari4+,chrome */
-background: -webkit-linear-gradient(359deg, rgba(237,198,119,1) 0%, rgba(237,198,119,1) 18%, rgba(26,163,255,1) 56%, rgba(26,163,255,1) 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(359deg, rgba(237,198,119,1) 0%, rgba(237,198,119,1) 18%, rgba(26,163,255,1) 56%, rgba(26,163,255,1) 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(359deg, rgba(237,198,119,1) 0%, rgba(237,198,119,1) 18%, rgba(26,163,255,1) 56%, rgba(26,163,255,1) 100%); /* ie10+ */
-background: linear-gradient(91deg, rgba(237,198,119,1) 0%, rgba(237,198,119,1) 18%, rgba(26,163,255,1) 56%, rgba(26,163,255,1) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edc677', endColorstr='#1aa3ff',GradientType=1 ); /* ie6-9 */
-    color:white;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#83a4d4+64,b6fbff+100,b6fbff+100,b6fbff+102,b6fbff+102 */
+background: #83a4d4; /* Old browsers */
+background: -moz-linear-gradient(left,  #83a4d4 64%, #b6fbff 100%, #b6fbff 100%, #b6fbff 102%, #b6fbff 102%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #83a4d4 64%,#b6fbff 100%,#b6fbff 100%,#b6fbff 102%,#b6fbff 102%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #83a4d4 64%,#b6fbff 100%,#b6fbff 100%,#b6fbff 102%,#b6fbff 102%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83a4d4', endColorstr='#b6fbff',GradientType=1 ); /* IE6-9 */
+
 }
 .committeeBar
 {
-    background-color:  #edc677;
+    background-color:  #83a4d4;
     color:black;
 }
 
