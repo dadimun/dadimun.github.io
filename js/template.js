@@ -225,10 +225,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex2-1].style.display = "block";  
-      dots[slideIndex2-1].className += " w3-red";
+      dots[slideIndex2-1].className += " w3-grey";
       
     }
     
@@ -250,10 +250,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace("w3-grey", "");
       }
       x[slideIndex3-1].style.display = "block";  
-      dots[slideIndex3-1].className += " w3-red";
+      dots[slideIndex3-1].className += " w3-grey";
     }
     
     
@@ -274,10 +274,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex4-1].style.display = "block";  
-      dots[slideIndex4-1].className += " w3-red";
+      dots[slideIndex4-1].className += " w3-grey";
     } 
 
     var slideIndex5 = 1;
@@ -297,10 +297,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex5-1].style.display = "block";  
-      dots[slideIndex5-1].className += " w3-red";
+      dots[slideIndex5-1].className += " w3-grey";
     } 
 
     var slideIndex6 = 1;
@@ -320,10 +320,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex6-1].style.display = "block";  
-      dots[slideIndex6-1].className += " w3-red";
+      dots[slideIndex6-1].className += " w3-grey";
     } 
     
     var slideIndex7 = 1;
@@ -343,10 +343,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex7-1].style.display = "block";  
-      dots[slideIndex7-1].className += " w3-red";
+      dots[slideIndex7-1].className += " w3-grey";
     }
 
     var slideIndex8 = 1;
@@ -366,10 +366,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex8-1].style.display = "block";  
-      dots[slideIndex8-1].className += " w3-red";
+      dots[slideIndex8-1].className += " w3-grey";
     }
 
     var slideIndex9 = 1;
@@ -389,10 +389,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex9-1].style.display = "block";  
-      dots[slideIndex9-1].className += " w3-red";
+      dots[slideIndex9-1].className += " w3-grey";
     }
 
     var slideIndex10 = 1;
@@ -412,10 +412,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex10-1].style.display = "block";  
-      dots[slideIndex10-1].className += " w3-red";
+      dots[slideIndex10-1].className += " w3-grey";
     }
     
 
