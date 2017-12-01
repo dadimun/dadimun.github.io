@@ -184,7 +184,7 @@ jQuery(function($) {
 
 
 //SlideShow
-    var slideIndex = 1;
+	var slideIndex = 1;
     showDivs(slideIndex);
 
     function currentDiv(n) {
@@ -201,10 +201,10 @@ jQuery(function($) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-red", "");
+         dots[i].className = dots[i].className.replace(" w3-grey", "");
       }
       x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-red";
+      dots[slideIndex-1].className += " w3-grey";
       
     }
 

@@ -56,7 +56,7 @@
 							<ul class="nav navbar-nav">
                                 
                                 <div class="nav navbar-nav dropdown">
-								<li class="dropbtn"><a href="Conference.html" onclick="conference();">Conference</a></li>
+								<li class="dropbtn"><a href="#" onclick="conference();">Conference</a></li>
                                     <br><br>
                                     <div class="dropdown-content">
                                         <a href="Conference.html" onclick="Secretariat();">Secretariat</a>
@@ -99,25 +99,9 @@
     
      
     <div class="w3-content" style="max-width: 100%">
+       
                 <div class="mySlides2 w3-container">
-                    <br><br>
-                    <hr>
-                    <h1 align="center">Home Directory</h1>
-                    <hr>
-                    <center>
-                        <img src="images/ConferencePg/ConSecretariat.jpg" id="Secretariats" hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(2)">
-                        <img src="images/ConferencePg/ConStudentOf.jpg" id ="StudentOffs"hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(3)">
-                        <img src="images/ConferencePg/ConDelegate.jpg" id=Delegates hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(4)">
-                        <br><br>
-                        <img src="images/ConferencePg/ConTheme.jpg" id=theme hspace="0.5%"width="25%" class="demo imgbtn" onclick="currentDiv2(5)">
-                        <img src="images/ConferencePg/ConStatement.jpg"  id=statement hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(6)">
-                        <img src="images/ConferencePg/Founder.jpg" id=founder hspace="0.5%" width="25%" class="demo imgbtn" onclick="currentDiv2(7)">
-                    </center>
-                </div>
-        
-        
-                <div class="mySlides2 w3-container">
-                        <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+                         
                         <section id="nino-services">
                             <div class="container">
                                 <h2 class="nino-sectionHeading">
@@ -450,7 +434,7 @@ Again, it is a huge honor to serve as this role, and I look forward to seeing yo
 				<br>
 				<span class="listOfOfficersTitle">General Assembly Second Committee [GA 2]</span><br>
 				JuWon Ha <br>
-				Erik Chen<br>
+				Ivy Kang<br>
 				<br>
 				<span class="listOfOfficersTitle">Economic and Social Council [ECOSOC]</span><br>
 				Yi Xin Lee <br>
@@ -458,7 +442,7 @@ Again, it is a huge honor to serve as this role, and I look forward to seeing yo
 				<br>
 
 				<span class="listOfOfficersTitle">Environment Commission [ENV]</span><br>
-				SiHoo Lee <br>
+				Erik Chen<br>
 				Ah Song Cho <br>
 				<br>
 				<span class="listOfOfficersTitle">Human Rights Council [HRC]</span><br>
@@ -486,22 +470,37 @@ Again, it is a huge honor to serve as this role, and I look forward to seeing yo
         </div>
 
         <div class="mySlides2 w3-container">
-            <button class="w3-button demo w3-black"  onclick="currentDiv2(1)">Home Directory</button>
+             
             <h1 align="center">Delegates</h1>
         </div>
         
         <div class="mySlides2 w3-container">
-            <button class="w3-button demo w3-black"  onclick="currentDiv2(1)">Home Directory</button>
+             
             <h1 align="center">Conference Theme</h1>
         </div>
         
         <div class="mySlides2 w3-container">
-            <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+             
             <h1 align="center">Statement Of Purpose</h1>
+            
+           	<h4 class="MessageFromFounder">
+           	<br><br>
+           	Dulwich International Model United Nations was founded by Miranda Melcher and Benjamin Tan in 2010. Though we did not have the privilege of witnessing them build DIMUN from scratch, their initial resolve and ardour continues to inspire us today. The annual DIMUN conference serves to provide curious middle school students with the opportunity to discover and experience MUN from a young age. 
+			<br><br>
+			The rigid procedures and crowded committee rooms of MUN are not as apparent at DIMUN conferences; It’s a reminder of the basics of diplomacy: the simplest form of dialogue in order to achieve unanimity. DIMUN Delegates needn’t be seasoned, polished MUN debaters. We look for delegates who are not restricted by pre-conditioned approaches to global issues but have their original perspective, original perspectives that will become the foundation of tomorrow’s world. There will be no restraints at DIMUN: no judgement, no censorship, just opportunity. 
+<br><br>
+			DIMUN was created by Students, led by students and will continue to be led by students for many years to come. Our philosophy was shaped by the belief that each ‘generation’ of MUNers will inspire the next and advise them with their experience. The paths we pave now will make it easier for the next to discover their own. 
+<br><br>
+			Every Secretary-General, before and after me, pledge to guide, lead and stand to serve each participant of DIMUN, and I have faith that the legacy of DIMUN will continue to unreservedly serve the global community. 
+<br><br>
+			Jackel Cheung<br>
+			Secretary-General DIMUN VIII, March 2017-2018<br>
+			Dulwich College Beijing Class of 2019  <br>
+			</h4>
         </div>
 
         <div class="mySlides2 w3-container">
-            <button class="w3-button demo w3-black" onclick="currentDiv2(1)">Home Directory</button>
+             
             <h1 align="center">Message From Founder</h1>
             <br>
             <hr>
@@ -560,31 +559,27 @@ Again, it is a huge honor to serve as this role, and I look forward to seeing yo
                     
         if (localStorage.getItem("Conferencebtn")=="Secretariat")
             {
-                document.getElementById("Secretariats").click();
+                currentDiv2(1);
             }
         else if (localStorage.getItem("Conferencebtn")=="StudentOff")
             {
-                document.getElementById("StudentOffs").click();
+                currentDiv2(2);
             }
         else if (localStorage.getItem("Conferencebtn")=="Delegate")
             {
-                document.getElementById("Delegates").click();
+                currentDiv2(3);
             }
         else if (localStorage.getItem("Conferencebtn")=="theme")
             {
-                document.getElementById("theme").click();
+                currentDiv2(4);
             }
         else if (localStorage.getItem("Conferencebtn")=="statement")
             {
-                document.getElementById("statement").click();
+                currentDiv2(5);
             }
         else if (localStorage.getItem("Conferencebtn")=="founder")
             {
-                document.getElementById("founder").click();
-            }
-        else
-            {
-                document.getElementById("homedir").click();
+                currentDiv2(6);
             }
 
 

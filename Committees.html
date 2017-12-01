@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -55,7 +54,7 @@
 							<ul class="nav navbar-nav">
                                 
                                 <div class="nav navbar-nav dropdown">
-								<li class="dropbtn"><a href="Conference.html" onclick="conference();">Conference</a></li>
+								<li class="dropbtn"><a href="#" onclick="conference();">Conference</a></li>
                                     <br><br>
                                     <div class="dropdown-content">
                                         <a href="Conference.html" onclick="Secretariat();">Secretariat</a>
@@ -96,32 +95,10 @@
 
 	</header>
     
-    
+   	<p class="demo"></p>
     <div class="w3-content" style="max-width: 100%">
-        <div class="mySlides w3-container">
-            <br><br>
-            <hr>
-            <h1 align="center">Home Directory</h1>
-            <hr>
-            <center>
-            <img src="images/CommitteePg/GeneralAssembly.jpg" onclick="currentDiv(2)" class="demo imgbtn" width="24%" id=generalassembly>
-            <img src="images/CommitteePg/GeneralAssembly2.jpg" onclick="currentDiv(10)" class="demo imgbtn" width="24%" id=generalassembly2>
-            <img src="images/CommitteePg/EnviromentalCommision.jpg" onclick="currentDiv(3)" class="demo imgbtn" width="24%" id=enviromental><br><br>
-            <img src="images/CommitteePg/EconomicAnd%20SocialCouncil.jpg" onclick="currentDiv(4)" class="demo imgbtn" width="24%" id=economicsocialcouncil>
-            <img src="images/CommitteePg/HumanRightsCouncil.jpg" onclick="currentDiv(5)" class="demo imgbtn" width="24%"id=humanrights>
-            <img src="images/CommitteePg/SpecialCouncil.jpg" onclick="currentDiv(6)" class="demo imgbtn" width="24%"id=specialcouncil><br><br>
-            <img src="images/CommitteePg/DisarmamentCommittee.jpg" onclick="currentDiv(7)" class="demo imgbtn" width="24%" id=disarmament>
-            <img src="images/CommitteePg/AdvisoryPanel.jpg" onclick="currentDiv(8)" class="demo imgbtn" width="24%" id=advisory>
-            <img src="images/CommitteePg/SecurityCouncil.jpg" onclick="currentDiv(9)" class="demo imgbtn" width="24%" id=security>
-            <br><br><br><br><br>
-            </center>
-        </div>
-        
-        
-        <div class="mySlides w3-container">
-            
-            <button class="demo w3-button w3-black" id=homedir onclick=currentDiv(1)>Home Directory</button>
-            
+
+        <div class="mySlides w3-container">   
             <img src="images/CommitteePg/GeneralAssemblyHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(1)>Topics</button>
@@ -147,9 +124,38 @@
                 </div>
             </div>
         </div>
+        <div class="mySlides w3-container">
+            
+              
+            
+            <img src="images/CommitteePg/GeneralAssembly2Header.png" width="100%">
+            <div class="w3-left w3-bar committeeItem">
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(1)">Topics</button>
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(2)">Collaboration Space</button>
+            </div>
+            <div class="w3-content" style="max-width: 100%">
+                <div class="mySlides10 w3-container">
+                    <br>
+					<h1>Topics</h1>
+					<br>
+                    <p class="committeeText">
+                    1. Combating international financial crimes <br><br>
+					2. Economic Development in Central Asia<br><br>
+					3. Maintaining Sustainable Tourism industries in LEDCs<br><br>
+					4. Measures to regulate and stabilize cryptocurrencies<br><br>
+					</p>
+                </div>
+                <div class="mySlides10 w3-container">
+                    <h1>Collaboration Space</h1>
+                    <div id="drive9">
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV1JJa2l0SEh5RXM#list" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+             
             <img src="images/CommitteePg/EnviromentalConmmisionHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(1)>Topics</button>
@@ -177,7 +183,7 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+             
             <img src="images/CommitteePg/EconomicAndSocialCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(1)>Topics</button>
@@ -205,7 +211,7 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+             
             <img src="images/CommitteePg/HumanRightsCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(1)>Topics</button>
@@ -233,7 +239,7 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+             
             <img src="images/CommitteePg/SpecialCouncilHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(1)>Topics</button>
@@ -261,11 +267,11 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
+             
             <img src="images/CommitteePg/DisarmamentCommitteeHeader.png" width=100%>
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(1)>Topics</button>
-                <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(2)>Collaboration Space</button>
+                <button class="demo7 w3-button committeeBar w3-bar-item" onclick="currentDiv7(2)">Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides7 w3-container">
@@ -281,7 +287,7 @@
                 </div>
                 <div class="mySlides7 w3-container">
                     <h1>Collaboration Space</h1>
-                    <div id=drive6>
+                    <div id="drive6">
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsWEdZSXdpbmw2Q1E#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
@@ -289,11 +295,11 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
-            <img src="images/CommitteePg/AdvisoryPanelHeader.png" width=100%>
+             
+            <img src="images/CommitteePg/AdvisoryPanelHeader.png" width="100%">
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(1)>Topics</button>
-                <button class="demo8 w3-button committeeBar w3-bar-item" onclick=currentDiv8(2)>Collaboration Space</button>
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick="currentDiv8(1)">Topics</button>
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick="currentDiv8(2)">Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides8 w3-container">
@@ -308,7 +314,7 @@
                 </div>
                 <div class="mySlides8 w3-container">
                     <h1>Collaboration Space</h1>
-                    <div id=drive7>
+                    <div id="drive7">
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsakZ3RXZ5d2EyZDQ#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 
@@ -317,11 +323,11 @@
         </div>
         
         <div class="mySlides w3-container">
-            <button class="demo w3-button w3-black" onclick=currentDiv(1)>Home Directory</button>
-            <img src="images/CommitteePg/SecurityCouncilHeader.png" width=100%>
+             
+            <img src="images/CommitteePg/SecurityCouncilHeader.png" width="100%">
             <div class="w3-left w3-bar committeeItem">
-                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(1)>Topics</button>
-                <button class="demo9 w3-button committeeBar w3-bar-item" onclick=currentDiv9(2)>Collaboration Space</button>
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick="currentDiv9(1)">Topics</button>
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick="currentDiv9(2)">Collaboration Space</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides9 w3-container">
@@ -336,42 +342,14 @@
                 </div>
                 <div class="mySlides9 w3-container">
                     <h1>Collaboration Space</h1>
-                    <div id=drive8>
+                    <div id="drive8">
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV2J1UkRmMl9NT2M#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="mySlides w3-container">
-            
-            <button class="demo w3-button w3-black" id=homedir onclick=currentDiv(1)>Home Directory</button>
-            
-            <img src="images/CommitteePg/GeneralAssembly2Header.png" width=100%>
-            <div class="w3-left w3-bar committeeItem">
-                <button class="demo10 w3-button committeeBar w3-bar-item" onclick=currentDiv10(1)>Topics</button>
-                <button class="demo10 w3-button committeeBar w3-bar-item" onclick=currentDiv10(2)>Collaboration Space</button>
-            </div>
-            <div class="w3-content" style="max-width: 100%">
-                <div class="mySlides10 w3-container">
-                    <br>
-					<h1>Topics</h1>
-					<br>
-                    <p class="committeeText">
-                    1. Combating international financial crimes <br><br>
-					2. Economic Development in Central Asia<br><br>
-					3. Maintaining Sustainable Tourism industries in LEDCs<br><br>
-					4. Measures to regulate and stabilize cryptocurrencies<br><br>
-					</p>
-                </div>
-                <div class="mySlides10 w3-container">
-                    <h1>Collaboration Space</h1>
-                    <div id=drive9>
-                    <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV1JJa2l0SEh5RXM#list" width="100%" height="600px" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         
         
     </div>
@@ -418,43 +396,39 @@ function carousel()
         
         if (localStorage.getItem("CommitteeBtn")=="GeneralAssembly")
             {
-                document.getElementById("generalassembly").click();
+                currentDiv(1);
             }
 		else if (localStorage.getItem("CommitteeBtn")=="GeneralAssembly2")
             {
-                document.getElementById("generalassembly2").click();
+                currentDiv(2);
 			}
         else if (localStorage.getItem("CommitteeBtn")=="EnviromentalCommision")
             {
-                document.getElementById("enviromental").click();
+                currentDiv(3);
             }
         else if (localStorage.getItem("CommitteeBtn")=="Economic")
             {
-                document.getElementById("economicsocialcouncil").click();
+                currentDiv(4);
             }
         else if (localStorage.getItem("CommitteeBtn")=="HumanRights")
             {
-                document.getElementById("humanrights").click();
+                currentDiv(5);
             }
         else if (localStorage.getItem("CommitteeBtn")=="Special")
             {
-                document.getElementById("specialcouncil").click();
+                currentDiv(6);
             }
         else if (localStorage.getItem("CommitteeBtn")=="Disarmament")
             {
-                document.getElementById("disarmament").click();
+                currentDiv(7);
             }
         else if (localStorage.getItem("CommitteeBtn")=="Advisory")
             {
-                document.getElementById("advisory").click();
+                currentDiv(8);
             }
         else if (localStorage.getItem("CommitteeBtn")=="Security")
             {
-                document.getElementById("security").click();
-            }
-        else
-            {
-                document.getElementById("homedir").click();
+                currentDiv(9);
             }
     
         
