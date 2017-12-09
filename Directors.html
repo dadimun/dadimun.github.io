@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html>
-<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,19 +96,35 @@
 	</header>
     <center>
     <br><br><br>
-    <h4 align = "justify" class="MessageFromFounder">
-		Welcome MUN directors:
+    <h1 class=:DirectorsText><strong>Welcome MUN directors:</strong></h1>
+    <h4 align = "justify" class="DirectorsText">
+		
 		<br><br>
 		<table class="minimalistBlack2">
 		<tbody>
 		<tr>
-		<td align="center"><a>Monthly Directors' Pamphlet</a></td>
+		<td align="center"><a onClick="doesConnectionExist();">Monthly Directors' Pamphlet</a></td>
 		<td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Directors' Guide</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		</tr>
 		</tbody>
 		</table>
 		<br><br>
-		Delegates:
+		Model United Nations is a forum for students to research and consider world issues before convening to represent the concerns of individual countries in UN-style debate. At the conference, their task will be to find globally acceptable solutions to real-world problems. It is an invaluable opportunity for students to familiarise themselves with current national and global issues as well as to improve their research and public speaking skills.
+ 		<br><br>
+		The majority of delegates in each committee will be in Years 7 to 9 (Grades 6 to 8); the student officer Chairs leading each committee will be in Years 10 to 13 (Grades 9 to 12) and will be from participating schools.
+		Committee Chairs will need to apply for the positions; we will send out application forms in September. DIMUN delegates are not required to have past MUN experience.
+		<br><br>
+		A new edition we are hoping to add to this year's conference is a committee for KS4/5 (high school) students exclusively. This will be the Advisory Panel Committee. As this is a new initiative to expand this year's conference, we would like to ask you to please let us know if there would be any KS4/5 students who may be interested in this opportunity from your school. 
+		<br><br>	
+		The conference will last three days, starting the morning of Friday 2nd and continuing until Sunday afternoon. The fee per participant is RMB 750/USD 120, which includes lunch on all three days, dinner on Friday and Saturday, and badges, folders, and t-shirts.  Accommodation, insurance, and travel to and from Beijing are not included in the conference fee. Accommodation can be booked as needed at a nearby Crowne Plaza Hotel or CITIC Hotel; transport between the hotel and the conference will be provided, as well as transport to and from Dulwich College Beijing and the airport.
+		<br><br>
+		If your school is interested in participating, please fill out the Expression of Interest Form (which can be found attached to this email) by 18th September, 2017. Please note that submitting this form does not definitely commit your school to attending but it will help us estimate the number of delegates so we can plan a high quality conference for you. Upon your registration, we will also send you delegate preparation guides and other free resources to help you and your delegates. 
+		<br><br>
+		This year, positions will be allocated on a first come first serve basis, so please hand in the required letters and payments as soon as possible before the deadlines. As we are also looking for new schools to collaborate with, we would be grateful if you could supply us with suggestions of any other schools that might be interested in attending.
+		<br><br>
+		Please do not hesitate to contact us at this email for further details regarding DIMUN VII
+		<br><br><br>
+		<strong>Delegates:</strong>
 		<br>
 		<br>
 		Delegates must be in Years 7 – 9 (Grades 6 – 8), and no previous MUN experience is necessary. However, high-school students who wish to join DIMUN VIII are welcome to join the Advisory Panel; a new committee that has been opened specially for interested high-school students. At the conference, each committee will have one delegate per country. Once delegation assignments are released, MUN Directors may choose which committee their students will participate in. In the case of large delegations where there may be more countries assigned to one school, the number of delegates per country and available committees will be given.
@@ -148,6 +163,7 @@
 		</tr>
 		</tbody>
 		</table>
+		<br><br><br><br>
 	</h4>
     </center>
     
@@ -160,5 +176,29 @@
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="js/unslider-min.js"></script>
 	<script type="text/javascript" src="js/template.js"></script>
+
+
 </body>
+<script>
+	function doesConnectionExist() {
+		var xhr = new XMLHttpRequest();
+		var file = "https://www.google.com.au/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
+		var randomNum = Math.round(Math.random() * 10000);
+
+		xhr.open('HEAD', file + "?rand=" + randomNum, true);
+		xhr.send();
+
+		xhr.addEventListener("readystatechange", processRequest, false);
+
+		function processRequest(e) {
+		  if (xhr.readyState == 4) {
+			if (xhr.status >= 200 && xhr.status < 304) {
+			  alert("connection exists!");
+			} else {
+			  alert("connection doesn't exist!");
+			}
+		  }
+		}
+	}
+</script>
 </html>
