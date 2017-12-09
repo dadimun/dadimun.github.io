@@ -103,8 +103,8 @@
 		<table class="minimalistBlack2">
 		<tbody>
 		<tr>
-		<td align="center"><a onClick="doesConnectionExist();">Monthly Directors' Pamphlet</a></td>
-		<td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Directors' Guide</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align="center"><a>Monthly Directors' Pamphlet</a></td>
+		<td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="pdfs/DIMUNDirectors guide.pdf">Directors' Guide</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		</tr>
 		</tbody>
 		</table>
@@ -179,26 +179,5 @@
 
 
 </body>
-<script>
-	function doesConnectionExist() {
-		var xhr = new XMLHttpRequest();
-		var file = "https://www.google.com.au/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
-		var randomNum = Math.round(Math.random() * 10000);
 
-		xhr.open('HEAD', file + "?rand=" + randomNum, true);
-		xhr.send();
-
-		xhr.addEventListener("readystatechange", processRequest, false);
-
-		function processRequest(e) {
-		  if (xhr.readyState == 4) {
-			if (xhr.status >= 200 && xhr.status < 304) {
-			  alert("connection exists!");
-			} else {
-			  alert("connection doesn't exist!");
-			}
-		  }
-		}
-	}
-</script>
 </html>

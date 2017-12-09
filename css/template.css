@@ -37,7 +37,7 @@ hr {
 a {
 	text-decoration: none;
 	outline: none;
-	color: #2ec06c;
+	color: black;
 	-webkit-transition: all .3s ease-in-out;
 	   -moz-transition: all .3s ease-in-out;
 		 -o-transition: all .3s ease-in-out;
@@ -45,7 +45,7 @@ a {
 			transition: all .3s ease-in-out;
 }
 a:hover {
-	color: #666;
+	color: skyblue;
 	text-decoration: none;
 }
 a:active {
@@ -1489,17 +1489,14 @@ html {
 .committeeItem
 {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#83a4d4+64,b6fbff+100,b6fbff+100,b6fbff+102,b6fbff+102 */
-background: #83a4d4; /* Old browsers */
-background: -moz-linear-gradient(left,  #83a4d4 64%, #b6fbff 100%, #b6fbff 100%, #b6fbff 102%, #b6fbff 102%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #83a4d4 64%,#b6fbff 100%,#b6fbff 100%,#b6fbff 102%,#b6fbff 102%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #83a4d4 64%,#b6fbff 100%,#b6fbff 100%,#b6fbff 102%,#b6fbff 102%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83a4d4', endColorstr='#b6fbff',GradientType=1 ); /* IE6-9 */
+background: black; /* Old browsers */
+color:white;
 
 }
 .committeeBar
 {
-    background-color:  #83a4d4;
-    color:black;
+    background-color:  black;
+    color:white;
 }
 
 .pickday
