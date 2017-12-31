@@ -1641,12 +1641,13 @@ img.scaled {
 {
 	font-size: 18px;
 	color:black;
+	font-weight: 800;
 	
 }
 .committeeTextIndent
 {
 	font-size: 18px;
-	color:#163639;
+	color:#162D55;
 	margin-left: 100px;
 	
 }
