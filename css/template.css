@@ -1625,6 +1625,7 @@ img.scaled {
 	color:black;
 	padding-left: 15em;
 	padding-right: 15em;
+	text-align: justify;
 }
 .DirectorsText
 {
@@ -1703,4 +1704,10 @@ table.minimalistBlack2 a:hover
  cursor: pointer;
  color:white;
  font-weight: 700;
+}
+
+.Schedule h2
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.5em; 
 }
