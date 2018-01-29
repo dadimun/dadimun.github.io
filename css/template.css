@@ -1710,4 +1710,13 @@ table.minimalistBlack2 a:hover
 {
 	font-family: 'Montserrat', sans-serif;
 	font-size:1.5em; 
+	font-weight: 600;
+}
+
+.ScheduleContent p
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.5em;
+	font-weight: 500;
+	color:black;
 }
