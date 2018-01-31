@@ -1638,6 +1638,18 @@ img.scaled {
 	padding-left: 12em;
 	padding-right: 12em;
 }
+
+.DirectorsTextTitle
+{
+	font-size: 30px;
+	font-variant: normal;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	line-height: 19px;
+	color:black;
+	padding-left: 12em;
+	padding-right: 12em;
+}
 .committeeText
 {
 	font-size: 18px;
