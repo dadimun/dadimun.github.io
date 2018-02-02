@@ -1732,3 +1732,13 @@ table.minimalistBlack2 a:hover
 	font-weight: 500;
 	color:black;
 }
+
+.NormalText
+{
+	font-size: 18px;
+	font-variant: normal;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	line-height: 19px;
+	color:black;
+}
