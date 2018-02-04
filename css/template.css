@@ -1541,12 +1541,23 @@ input[type=text]
         {
             width: 50%;
             padding: 12px 20px;
-            margin: 8px 0;
+            margin: 8px 0px;
             
             display: inline-block;
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+select
+{
+	 width: 50%;
+	 height:35px;
+     padding: 12px 20px;
+     margin: 8px 0px;
+}
+.TextAreaContactUs
+{
+	width: 50%;
+}
 .submit
         {
             background-color:white;
