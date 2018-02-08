@@ -35,13 +35,20 @@
 <script>
 	function send()
 	{
-		var nicE = new nicEditors.findEditor('TextStuffGA');
+			var nicE = new nicEditors.findEditor('TextStuffGA');
 			var CommentText = nicE.getContent();
 			
+		if((document.getElementById("CountryGA").value).length != 0 && (document.getElementById("EmailGA").value).length != 0 && CommentText.length !=0)
+			{
             emailjs.send("default_service","amendments",{country:document.getElementById("CountryGA").value, FromEmail:document.getElementById("EmailGA").value, information:CommentText, SAC:document.getElementById("SACGA").value});
             document.getElementById("CountryGA").value=""
             document.getElementById("EmailGA").value=""
             alert("Form Submitted!")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
 	}
 </script>
 <body data-target="#nino-navbar;" data-spy="scroll">
@@ -93,7 +100,7 @@
                                     <div class="dropdown-content">
                                         <a href="Committees.html" onclick="GeneralAssembly();">General Assembly 1</a>
                                         <a href="Committees.html" onclick="GeneralAssembly2();">General Assembly 2</a>
-                                        <a href="Committees.html" onclick="EnviromentalCommision();">Enviroment Commission</a>
+                                        <a href="Committees.html" onclick="EnvironmentalCommision();">Environment Commission</a>
                                         <a href="Committees.html" onclick="Economic();">Economic and Social Council</a>
                                         <a href="Committees.html" onclick="HumanRights();">Human Rights Council</a>
                                         <a href="Committees.html" onclick="Special();">Special Conference</a>
@@ -948,7 +955,7 @@ function carousel()
             {
                 currentDiv(2);
 			}
-        else if (localStorage.getItem("CommitteeBtn")=="EnviromentalCommision")
+        else if (localStorage.getItem("CommitteeBtn")=="EnvironmentalCommision")
             {
                 currentDiv(3);
             }

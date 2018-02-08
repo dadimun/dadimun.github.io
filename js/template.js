@@ -140,9 +140,9 @@ jQuery(function($) {
             {
                 localStorage.setItem("CommitteeBtn","GeneralAssembly2")
             }
-        function EnviromentalCommision()
+        function EnvironmentalCommision()
             {
-                localStorage.setItem("CommitteeBtn","EnviromentalCommision")
+                localStorage.setItem("CommitteeBtn","EnvironmentalCommision")
             }
         function Economic()
             {
