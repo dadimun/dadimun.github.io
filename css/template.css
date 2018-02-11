@@ -436,9 +436,9 @@ section {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	width: 50px;
+	width: 42.5%;
 	height: 2px;
-	background: #f38181;
+	background: black;
 	transform: translateX(-50%);
 }
 .nino-sectionHeading .nino-subHeading {
@@ -1752,4 +1752,12 @@ table.minimalistBlack2 a:hover
 	font-weight: 100;
 	line-height: 19px;
 	color:black;
+}
+.hrtitle
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 42.5%;
+	height: 2px;
+	background: black;
 }
