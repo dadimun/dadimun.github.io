@@ -33,17 +33,161 @@
 </head>
 
 <script>
-	function send()
+	function sendGA1()
 	{
-			var nicE = new nicEditors.findEditor('TextStuffGA');
+			var nicE = new nicEditors.findEditor('TextStuffGA1');
 			var CommentText = nicE.getContent();
 			
-		if((document.getElementById("CountryGA").value).length != 0 && (document.getElementById("EmailGA").value).length != 0 && CommentText.length !=0)
+		if((document.getElementById("CountryGA1").value).length != 0 && (document.getElementById("EmailGA1").value).length != 0 && CommentText.length !=0)
 			{
-            emailjs.send("default_service","amendments",{country:document.getElementById("CountryGA").value, FromEmail:document.getElementById("EmailGA").value, information:CommentText, SAC:document.getElementById("SACGA").value});
-            document.getElementById("CountryGA").value=""
-            document.getElementById("EmailGA").value=""
-            alert("Form Submitted!")
+            emailjs.send("default_service","amendmentsga1",{country:document.getElementById("CountryGA1").value, FromEmail:document.getElementById("EmailGA1").value, information:CommentText, SAC:document.getElementById("SACGA1").value});
+            document.getElementById("CountryGA1").value=""
+            document.getElementById("EmailGA1").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendGA2()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffGA2');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryGA2").value).length != 0 && (document.getElementById("EmailGA2").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsga2",{country:document.getElementById("CountryGA2").value, FromEmail:document.getElementById("EmailGA2").value, information:CommentText, SAC:document.getElementById("SACGA2").value});
+            document.getElementById("CountryGA2").value=""
+            document.getElementById("EmailGA2").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendECOSOC()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffECOSOC');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryECOSOC").value).length != 0 && (document.getElementById("EmailECOSOC").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsecosoc",{country:document.getElementById("CountryECOSOC").value, FromEmail:document.getElementById("EmailECOSOC").value, information:CommentText, SAC:document.getElementById("SACECOSOC").value});
+            document.getElementById("CountryECOSOC").value=""
+            document.getElementById("EmailECOSOC").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendENV()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffENV');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryENV").value).length != 0 && (document.getElementById("EmailENV").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsenv",{country:document.getElementById("CountryENV").value, FromEmail:document.getElementById("EmailENV").value, information:CommentText, SAC:document.getElementById("SACENV").value});
+            document.getElementById("CountryENV").value=""
+            document.getElementById("EmailENV").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendHRC()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffHRC');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryHRC").value).length != 0 && (document.getElementById("EmailHRC").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentshrc",{country:document.getElementById("CountryHRC").value, FromEmail:document.getElementById("EmailHRC").value, information:CommentText, SAC:document.getElementById("SACHRC").value});
+            document.getElementById("CountryHRC").value=""
+            document.getElementById("EmailHRC").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendSPC()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffSPC');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountrySPC").value).length != 0 && (document.getElementById("EmailSPC").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsspc",{country:document.getElementById("CountrySPC").value, FromEmail:document.getElementById("EmailSPC").value, information:CommentText, SAC:document.getElementById("SACSPC").value});
+            document.getElementById("CountrySPC").value=""
+            document.getElementById("EmailSPC").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendDIS()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffDIS');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryDIS").value).length != 0 && (document.getElementById("EmailDIS").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsdis",{country:document.getElementById("CountryDIS").value, FromEmail:document.getElementById("EmailDIS").value, information:CommentText, SAC:document.getElementById("SACDIS").value});
+            document.getElementById("CountryDIS").value=""
+            document.getElementById("EmailDIS").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendSC()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffSC');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountrySC").value).length != 0 && (document.getElementById("EmailSC").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentssc",{country:document.getElementById("CountrySC").value, FromEmail:document.getElementById("EmailSC").value, information:CommentText, SAC:document.getElementById("SACSC").value});
+            document.getElementById("CountrySC").value=""
+            document.getElementById("EmailSC").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
+			}
+		else
+			{
+				alert("Please Fill In The Required Fields")
+			}
+	}
+	
+	function sendAP()
+	{
+			var nicE = new nicEditors.findEditor('TextStuffAP');
+			var CommentText = nicE.getContent();
+			
+		if((document.getElementById("CountryAP").value).length != 0 && (document.getElementById("EmailAP").value).length != 0 && CommentText.length !=0)
+			{
+            emailjs.send("default_service","amendmentsap",{country:document.getElementById("CountryAP").value, FromEmail:document.getElementById("EmailAP").value, information:CommentText, SAC:document.getElementById("SACAP").value});
+            document.getElementById("CountryAP").value=""
+            document.getElementById("EmailAP").value=""
+            alert("Form Submitted! Please Check Your email for Confirmation")
 			}
 		else
 			{
@@ -133,6 +277,7 @@
                 <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(1)>Topics</button>
                 <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(2)>Resolutions</button>
                 <button class="demo2 w3-button committeeBar w3-bar-item" onclick=currentDiv2(3)>Amendments</button>
+                
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides2 w3-container">
@@ -211,17 +356,17 @@
 						<h1>Amendments</h1>
 						<br>
 						
-						<input type="text" id="CountryGA" placeholder="Country:">
-						<input type="text" id="EmailGA" placeholder="Enter Your Email:">
+						<input type="text" id="CountryGA1" placeholder="Country:">
+						<input type="text" id="EmailGA1" placeholder="Enter Your Email:">
 						<br>
-						<select id="SACGA">
+						<select id="SACGA1">
 						  <option value="Strike">Strike</option>
 						  <option value="Change">Change</option>
 						  <option value="Add">Add</option>
 						</select>
-            		    <textarea style="width:600%;height:200%;" id="TextStuffGA"></textarea>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffGA1"></textarea>
              		    <br>
-             		    <button onclick="send();" class="submit">Submit</button>
+             		    <button onclick="sendGA1();" class="submit">Submit</button>
               		    <br><br><br>
                		</center>
                 </div>
@@ -235,6 +380,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(1)">Topics</button>
                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(2)">Resolutions</button>
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick=currentDiv10(3)>Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides10 w3-container">
@@ -288,6 +434,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV1JJa2l0SEh5RXM#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides10 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryGA2" placeholder="Country:">
+						<input type="text" id="EmailGA2" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACGA2">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffGA2"></textarea>
+             		    <br>
+             		    <button onclick="sendGA2();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -297,6 +463,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(1)>Topics</button>
                 <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(2)>Resolutions</button>
+                <button class="demo3 w3-button committeeBar w3-bar-item" onclick=currentDiv3(3)>Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides3 w3-container">
@@ -354,6 +521,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsUkh5LWo0M3BveEU#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides3 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryENV" placeholder="Country:">
+						<input type="text" id="EmailENV" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACENV">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffENV"></textarea>
+             		    <br>
+             		    <button onclick="sendENV();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -363,6 +550,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(1)>Topics</button>
                 <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(2)>Resolutions</button>
+                <button class="demo4 w3-button committeeBar w3-bar-item" onclick=currentDiv4(3)>Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides4 w3-container">
@@ -421,6 +609,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsRUNZOGZtaGZsT28#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides4 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryECOSOC" placeholder="Country:">
+						<input type="text" id="EmailECOSOC" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACECOSOC">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffECOSOC"></textarea>
+             		    <br>
+             		    <button onclick="sendECOSOC();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -430,6 +638,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(1)>Topics</button>
                 <button class="demo5 w3-button committeeBar w3-bar-item" onclick=currentDiv5(2)>Resolutions</button>
+                <button class="demo5 w3-button committeeBar w3-bar-item" onclick="currentDiv5(3)">Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides5 w3-container">
@@ -626,6 +835,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsXzFLdE9UZ3VZQnc#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides5 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryHRC" placeholder="Country:">
+						<input type="text" id="EmailHRC" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACHRC">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffHRC"></textarea>
+             		    <br>
+             		    <button onclick="sendHRC();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -635,6 +864,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(1)>Topics</button>
                 <button class="demo6 w3-button committeeBar w3-bar-item" onclick=currentDiv6(2)>Resolutions</button>
+                <button class="demo6 w3-button committeeBar w3-bar-item" onclick="currentDiv6(3)">Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides6 w3-container">
@@ -683,6 +913,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsYkgzcjd6c2lnWkE#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides6 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountrySPC" placeholder="Country:">
+						<input type="text" id="EmailSPC" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACSPC">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffSPC"></textarea>
+             		    <br>
+             		    <button onclick="sendSPC();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -692,6 +942,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo7 w3-button committeeBar w3-bar-item" onclick=currentDiv7(1)>Topics</button>
                 <button class="demo7 w3-button committeeBar w3-bar-item" onclick="currentDiv7(2)">Resolutions</button>
+                <button class="demo7 w3-button committeeBar w3-bar-item" onclick="currentDiv7(3)">Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides7 w3-container">
@@ -764,6 +1015,26 @@
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsWEdZSXdpbmw2Q1E#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div class="mySlides7 w3-container">
+                    <br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryDIS" placeholder="Country:">
+						<input type="text" id="EmailDIS" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACDIS">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffDIS"></textarea>
+             		    <br>
+             		    <button onclick="sendDIS();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
+                </div>
             </div>
         </div>
         
@@ -773,6 +1044,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo8 w3-button committeeBar w3-bar-item" onclick="currentDiv8(1)">Topics</button>
                 <button class="demo8 w3-button committeeBar w3-bar-item" onclick="currentDiv8(2)">Resolutions</button>
+                <button class="demo8 w3-button committeeBar w3-bar-item" onclick="currentDiv8(3)">Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides8 w3-container">
@@ -825,7 +1097,28 @@
                     <div id="drive7">
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsakZ3RXZ5d2EyZDQ#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
+                </div>
                 
+                
+                <div class="mySlides8 w3-container">
+                	<br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountryAP" placeholder="Country:">
+						<input type="text" id="EmailAP" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACAP">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffAP"></textarea>
+             		    <br>
+             		    <button onclick="sendAP();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
                 </div>
             </div>
         </div>
@@ -836,6 +1129,7 @@
             <div class="w3-left w3-bar committeeItem">
                 <button class="demo9 w3-button committeeBar w3-bar-item" onclick="currentDiv9(1)">Topics</button>
                 <button class="demo9 w3-button committeeBar w3-bar-item" onclick="currentDiv9(2)">Resolutions</button>
+                <button class="demo9 w3-button committeeBar w3-bar-item" onclick="currentDiv9(3)">Amendments</button>
             </div>
             <div class="w3-content" style="max-width: 100%">
                 <div class="mySlides9 w3-container">
@@ -898,6 +1192,27 @@
                     <div id="drive8">
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0BwhNWu5jAmSsV2J1UkRmMl9NT2M#list" width="100%" height="600px" frameborder="0"></iframe>
                     </div>
+                </div>
+                
+                <div class="mySlides9 w3-container">
+                	<br>
+                    <center>
+						<h1>Amendments</h1>
+						<br>
+						
+						<input type="text" id="CountrySC" placeholder="Country:">
+						<input type="text" id="EmailSC" placeholder="Enter Your Email:">
+						<br>
+						<select id="SACSC">
+						  <option value="Strike">Strike</option>
+						  <option value="Change">Change</option>
+						  <option value="Add">Add</option>
+						</select>
+            		    <textarea style="width:600%;height:200%;" id="TextStuffSC"></textarea>
+             		    <br>
+             		    <button onclick="sendSC();" class="submit">Submit</button>
+              		    <br><br><br>
+               		</center>
                 </div>
             </div>
         </div>
