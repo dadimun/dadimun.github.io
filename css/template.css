@@ -1550,8 +1550,8 @@ input[type=text]
 select
 {
 	 width: 50%;
-	 height:35px;
-     padding: 12px 20px;
+	 height:40px;
+     padding: 12px 25px;
      margin: 8px 0px;
 }
 .TextAreaContactUs
