@@ -142,11 +142,18 @@
 			var nicE = new nicEditors.findEditor('comment');
 			var CommentText = nicE.getContent();
 			
-            emailjs.send("default_service","contactus",{name:document.getElementById("name").value, email:document.getElementById("email").value, comment:CommentText});
-            document.getElementById("name").value=""
-            document.getElementById("email").value=""
-            document.getElementById("comment").value=""
-            alert("Form Submitted!")
+			if((document.getElementById("name").value).length != 0 && (document.getElementById("email").value).length != 0 && CommentText.length != 0)
+				{
+					emailjs.send("default_service","contactus",{name:document.getElementById("name").value, email:document.getElementById("email").value, comment:CommentText});
+					document.getElementById("name").value=""
+					document.getElementById("email").value=""
+					document.getElementById("comment").value=""
+					alert("Form Submitted, Please Check Your Email To Confirm Submission")
+				}
+			else
+				{
+					alert("Please Fill In The Required Fields");
+				}
         }
         
     function send2()
@@ -154,12 +161,19 @@
 			var nicE = new nicEditors.findEditor('problem');
 			var problem = nicE.getContent();
 			
-            emailjs.send("default_service","techsupport",{name:document.getElementById("name2").value, email:document.getElementById("email2").value, room:document.getElementById("room").value, problem:problem});
-            document.getElementById("name2").value=""
-            document.getElementById("email2").value=""
-            document.getElementById("room").value=""
-            document.getElementById("problem").value=""
-            alert("Form Submitted!")
+			if(document.getElementById("name2").value.length != 0 && document.getElementById("email2").value.length != 0 && document.getElementById("room").value.length != 0 && problem.length != 0)
+				{
+					emailjs.send("default_service","techsupport",{name:document.getElementById("name2").value, email:document.getElementById("email2").value, room:document.getElementById("room").value, problem:problem});
+					document.getElementById("name2").value=""
+					document.getElementById("email2").value=""
+					document.getElementById("room").value=""
+					document.getElementById("problem").value=""
+					alert("Form Submitted! Please Check Your Email To Confirm Submission")
+				}
+			else
+				{
+					alert("Please Fill In The Required Fields");
+				}
         }
     </script>
 </body>
