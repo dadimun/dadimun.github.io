@@ -97,6 +97,13 @@
 	</header>
     
 <img src="images/Press/PressHeader.png" width="100%">
+       <div class="w3-left w3-bar committeeItem">
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(1)">DIMUNITE ISSUES</button>
+                <button class="demo10 w3-button committeeBar w3-bar-item" onclick="comingSoon();">Photos</button>
+                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="comingSoon();">DIMUN Crew</button>
+                       
+            </div>
+       <div class="mySlides10 w3-container">
         <div class="dropdown">
             
             <button class="dropbtn PressNav pickday">></button>
@@ -108,6 +115,7 @@
                 </div> 
         </div>
     	
+		
     	
     	<section id="VIIIissue">
     	<br><br>
@@ -116,7 +124,7 @@
     	<center>
 		<img hspace="3.5%" class="imgbtn" onClick="Issue1VIII();" src="images/Press/DIMUNITE ISSUE 1.jpg" width = "158.4px" height ="234.8px">
 		<img hspace="3.5%" class="imgbtn" onClick="Issue2VIII();" src="images/Press/WeChat Image_20180302234459.png" width = "158.4px" height ="234.8px">
-		<img hspace="3.5%" class="imgbtn" src="images/Press/Coming Soon.jpg" width = "158.4px" height ="234.8px">
+		<img hspace="3.5%" class="imgbtn" src="images/Press/COVERPAGE3.png" width = "158.4px" height ="234.8px" onClick="Issue3VIII();">
 		</center>
    		</section>
    		
@@ -140,12 +148,118 @@
    		<h1 align="center">Group Photo</h1>
     	<hr class="hrtitle">
     	<center>
-		<img src="images/Press/GroupPhoto.jpg">
+		<img src="images/Press/DSC06480.jpg" width="80%">
 		</center>
 		</section>
 
+    </div>
     
-    
+    <div class="mySlides10 w3-container">
+    <div id="imgModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<img src="" id="pic">
+		  </div>
+
+		</div>
+    	<center>
+    		<br>	
+    		<h1>Photos</h1>
+    		<h4>[Turn Off VPN]</h4>
+    		<div id="dayBanner" class="banner">
+    			<h3 id="dayText"></h3>
+    		</div>
+    		
+    		<br><br>
+    		<div id="day1Pics"></div>
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3022.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3027.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3043.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3061.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3070.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3083.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3123.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3126.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3130.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3140.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://myschool.dulwich-beijing.cn/pluginfile.php/44140/mod_lightboxgallery/gallery_images/0/IMG_3175.JPG" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="https://i.imgur.com/KMevUO5.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		
+    		
+    		<br><br>
+    		<div id="day2Pics"></div> 
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>
+    		
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		<br><br>   		
+    		
+    		<div id="day3Pics"></div>
+			<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" class="imgbtn" onClick="modalShow(this)">
+    		
+    		
+    	</center>
+	</div>
     
     
     <script type="text/javascript" src="js/jquery.min.js"></script>	
@@ -159,7 +273,70 @@
 	<script type="text/javascript" src="js/template.js"></script>
     
     <script>
-    
+		function modalShow(imgSRC)
+		{
+			openModal();
+			document.getElementById("pic").src=imgSRC.src;				
+		}
+		
+		// Get the modal
+		var modal = document.getElementById('imgModal');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal 
+		function openModal() {
+			document.getElementById('imgModal').style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		
+		
+    $(window).scroll(function() {
+   var hT = $('#day2Pics').offset().top,
+       hH = $('#day2Pics').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       	document.getElementById("dayBanner").style.backgroundColor="#C3E2CF";
+	   	document.getElementById("dayText").innerHTML="DAY 2"
+	   }
+	});
+		
+	$(window).scroll(function() {
+   var hT = $('#day1Pics').offset().top,
+       hH = $('#day1Pics').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       	document.getElementById("dayBanner").style.backgroundColor="#E7D284";
+	   	document.getElementById("dayText").innerHTML="DAY 1"
+	   }
+	});
+		
+	$(window).scroll(function() {
+   var hT = $('#day3Pics').offset().top,
+       hH = $('#day3Pics').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       	document.getElementById("dayBanner").style.backgroundColor="#B51015";
+	   	document.getElementById("dayText").innerHTML="DAY 3"
+	   }
+	});
+		
+	
     function scroll() 
     {
     window.scrollBy(0, 50);
@@ -178,6 +355,10 @@
 		{
 			window.open("pdfs/Press/VIII/DIMUNITE ISSUE 2.pdf")
 		}
+	function Issue3VIII()
+		{
+			window.open("pdfs/Press/VIII/DIMUNITE ISSUE 3.pdf")
+		}
 	function Issue1()
 		{
 			window.open("pdfs/Press/DIMUNITE issue 1 .pdf")
@@ -192,6 +373,53 @@
 		{
 			window.open("pdfs/Press/DIMUNITE issue 3.pdf")
 		}
+		
+	function comingSoon()
+		{
+			alert("Coming Soon");
+		}
+		
+		currentDiv10(2);
+		currentDiv10(1);
 </script>
 </body>
+
+<style>
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content/Box */
+	.modal-content {
+		background-color: #000000;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%; /* Could be more or less, depending on screen size */
+	}
+
+	/* The Close Button */
+	.close {
+		color: white;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}	
+</style>
 </html>

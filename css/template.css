@@ -1761,3 +1761,20 @@ table.minimalistBlack2 a:hover
 	height: 2px;
 	background: black;
 }
+
+.banner
+{
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	right:0em;
+	left:0em;
+	bottom:0em;
+	width:100%;
+}
+
+.banner h3
+{
+	line-height: 50px;
+	font-size: 28px;
+}
