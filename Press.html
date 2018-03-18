@@ -100,7 +100,7 @@
        <div class="w3-left w3-bar committeeItem">
                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(1)">DIMUNITE ISSUES</button>
                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(2)">Photos</button>
-                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="comingSoon();">DIMUN Crew</button>
+                 <button class="demo10 w3-button committeeBar w3-bar-item" onclick="currentDiv10(3)">DIMUN Crew</button>
                        
             </div>
        <div class="mySlides10 w3-container">
@@ -162,7 +162,7 @@
 			<img src="" id="pic">
 		  </div>
 
-		</div>
+	</div>
     	<center>
     		<br>	
     		<h1>Photos</h1>
@@ -290,6 +290,41 @@
     		
     	</center>
 	</div>
+   
+   	<div class="mySlides10 w3-container">
+   	<div id="imgModal2" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close close2">&times;</span>
+			<img src="" id="pic2">
+		  </div>
+
+	</div>
+		<center>
+    		<br>	
+    		<h1>DIMUN Crew</h1>   		
+    		<img src="https://i.imgur.com/N2E4M9g.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/V3p9Gyn.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/Fhsg4XF.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/imSvZpi.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		
+    		<br><br>
+    		
+    		<img src="https://i.imgur.com/GHc4M2J.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/McJUA7n.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/QwNWcJf.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="https://i.imgur.com/mLkYJMV.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		
+    		<br><br>
+    		
+    		<img src="https://i.imgur.com/38DYvUW.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		<img src="images/Empty Frame.jpg" width="15%" hspace ="0.6%" height="123.5px" class="imgbtn" onClick="modalShow2(this)">
+    		
+    		<br><br>
+		</center>
+	</div>
     
     
     <script type="text/javascript" src="js/jquery.min.js"></script>	
@@ -332,6 +367,34 @@
 			}
 		}
 		
+		function modalShow2(imgSRC)
+		{
+			openModal2();
+			document.getElementById("pic2").src=imgSRC.src;				
+		}
+		
+		// Get the modal
+		var modal2 = document.getElementById('imgModal2');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close2")[0];
+
+		// When the user clicks on the button, open the modal 
+		function openModal2() {
+			document.getElementById('imgModal2').style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal2.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal2) {
+				modal2.style.display = "none";
+			}
+		}
 		
     $(window).scroll(function() {
    var hT = $('#day2Pics').offset().top,
