@@ -119,6 +119,10 @@ jQuery(function($) {
             {
                 localStorage.setItem("Conferencebtn","founder")
             }
+		function Alumni()
+            {
+                localStorage.setItem("Conferencebtn","alumni")
+            }
         function conference()
             {
                 
