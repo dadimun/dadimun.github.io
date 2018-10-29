@@ -1,0 +1,387 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.view1 {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.view1-bg {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 130%;
+
+    background: url(../img/view1.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.view1-text {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/bg-text.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.view2 {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding: 0;
+
+    background-color: white;
+}
+
+.view3 {
+    position: absolute;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding: 0;
+
+    background-color: white;
+}
+
+.view2 .row {
+    width: 100%;
+    min-height:100vh;
+}
+
+.view4 {
+    position: absolute;
+    z-index: 5000;
+
+    width: 100%;
+    height: 100%;
+    padding: 8rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    background-color: #212121;
+}
+
+.content-wrapper {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.pin {
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+#view2-left-image-bg {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+
+    width: 105%;
+    height: auto;
+    min-height: 100vh;
+
+    background: url(../img/view2-left-bg.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#view3-right-image-bg {
+    position: absolute;
+    z-index: 0;
+    left: -17px;
+
+    width: 105%;
+    height: auto;
+    min-height: 100vh;
+    padding:0;
+
+    background: url(../img/view3-right-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#view2-image-center img {
+    position: absolute;
+
+    width: 33rem;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 11%;
+}
+
+#view2-image-right img {
+    position: absolute;
+    z-index: 3;
+    top:45%;
+    left: 30%;
+
+    width: 28rem;
+    height: auto;
+}
+
+#view-scroll {
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+
+    font-size: 3rem;
+}
+
+.about-text {
+    z-index: 6;
+
+    padding: 3rem;
+
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateY(50px);
+
+    opacity: 0;
+}
+
+#founder-text {
+    z-index: 5;
+
+    padding: 3rem;
+    padding-top: 5rem;
+}
+
+.fade-in {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: white;
+}
+
+
+.section-header {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: 100vh;
+    padding: 0;
+    padding-top: 100px;
+
+    background: url(../img/view1.jpeg) no-repeat center center;
+    background-position: center 65%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 89% 54%, 78% 54%, 68% 50%, 60% 54%, 50% 53%, 43% 51%, 33% 52%, 24% 53%, 15% 51%, 5% 52%, 0 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 89% 54%, 78% 54%, 68% 50%, 60% 54%, 50% 53%, 43% 51%, 33% 52%, 24% 53%, 15% 51%, 5% 52%, 0 50%);
+}
+
+@font-face { font-family: "DINCondensed Bold"; src: url('../font/DINCondensed-Bold.ttf'); }
+
+.display-1 {
+    opacity: 1;
+    background: -webkit-linear-gradient(#619ACD, transparent);
+    -webkit-background-clip: text;
+
+    font-family: "DINCondensed Bold",serif;
+    font-size:12rem;
+
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width:960px) {
+    .display-1{
+        font-size: 8rem;
+    }
+}
+
+.committee {
+    margin-left: 30%;
+}
+
+#committee-view1 {
+    position: absolute;
+    top: 60%;
+}
+
+.white {
+    background-color: white;
+}
+
+.dark {
+    background-color: #212121;
+}
+
+#committees-scroll {
+    position: fixed;
+    z-index: 2000;
+    top: 20%;
+    left: 4rem;
+
+    width: 20%;
+}
+
+.active {
+    border-color: #619ACD !important;
+    background-color: #619ACD !important;
+}
+
+.first {
+    position: absolute;
+    top:60%;
+}
+
+.team {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.Jennifer-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalJennifer.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Kevin-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalKevin.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Yixin-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalYixin.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Seojin-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalSeojin.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Miksa-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalMiksa.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Mark-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalMark.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Daniel-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalDaniel.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Andrew-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalAndrew.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Adelle-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalAdelle.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Jinho-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalJinho.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.modal-dialog {
+    max-width: 80%;
+}
+
+#delegates {
+    width: 40%;
+    height: auto;
+}

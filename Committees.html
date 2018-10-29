@@ -1,323 +1,214 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-	<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script type="text/javascript">
-	   (function(){
-		  emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
-	   })();
-	</script>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
-	<meta name="copyright" content="ninodezign.com">
-	<title>DIMUN</title>
-
-	<!-- favicon -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DIMUN IX</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="logo.ico">
-
-	<!-- css -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-     <link rel="stylesheet" type="text/css" href="Buttonsw3.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
-	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
-	<link rel="stylesheet" type="text/css" href="css/template.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <!-- Custom DIMUN style -->
+      <link href="css/dimun.css" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
+<body data-spy="scroll" data-target="#scroll-list" data-offset="300">
+    <header>
+        <nav class="navbar fixed-top navbar-light scrolling-navbar navbar-expand-lg justify-content-center">
+            <ul class="nav" id="navigation">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="committees.html">Committees</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Conference</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="directors.html">Directors</a>
+                        <a class="dropdown-item" href="secretariat.html">Secretariat</a>
+                        <a class="dropdown-item" href="so.html">Student Officers</a>
+                        <a class="dropdown-item" href="delegates.html">Delegates</a>
+                        <a class="dropdown-item" href="alumini.html">Alumini</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="theme.html">Theme</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Logistics</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="transport.html">Transport</a>
+                        <a class="dropdown-item" href="accomadation.html">Accomadation</a>
+                        <a class="dropdown-item" href="schedule.html">Schedule</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand text-dark h1" href="index.html"><strong>DIMUN</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="spotlight.html">Spotlight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="press.html">Press</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<script>
-	function sendGA1()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffGA1');
-			var CommentText = nicE.getContent();
+    <section class="section-header text-center" id="section-header">
+        <strong><h1 class="display-1">COMMITTEES</h1></strong>
+    </section>
 
-		if((document.getElementById("CountryGA1").value).length != 0 && (document.getElementById("EmailGA1").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsga1",{country:document.getElementById("CountryGA1").value, FromEmail:document.getElementById("EmailGA1").value, information:CommentText, SAC:document.getElementById("SACGA1").value});
-            document.getElementById("CountryGA1").value=""
-            document.getElementById("EmailGA1").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
+    <div id="committees-scroll">
+        <div id="scroll-list" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#committee-view1">GA1</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view2">GA2</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view3">ENV</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view4">ECOSC</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view5">HRC</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view6">SPC</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view7">DIS</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view8">SC</a>
+            <a class="list-group-item list-group-item-action" href="#committee-view8">AP</a>
+        </div>
+    </div>
 
-	function sendGA2()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffGA2');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryGA2").value).length != 0 && (document.getElementById("EmailGA2").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsga2",{country:document.getElementById("CountryGA2").value, FromEmail:document.getElementById("EmailGA2").value, information:CommentText, SAC:document.getElementById("SACGA2").value});
-            document.getElementById("CountryGA2").value=""
-            document.getElementById("EmailGA2").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendECOSOC()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffECOSOC');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryECOSOC").value).length != 0 && (document.getElementById("EmailECOSOC").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsecosoc",{country:document.getElementById("CountryECOSOC").value, FromEmail:document.getElementById("EmailECOSOC").value, information:CommentText, SAC:document.getElementById("SACECOSOC").value});
-            document.getElementById("CountryECOSOC").value=""
-            document.getElementById("EmailECOSOC").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendENV()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffENV');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryENV").value).length != 0 && (document.getElementById("EmailENV").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsenv",{country:document.getElementById("CountryENV").value, FromEmail:document.getElementById("EmailENV").value, information:CommentText, SAC:document.getElementById("SACENV").value});
-            document.getElementById("CountryENV").value=""
-            document.getElementById("EmailENV").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendHRC()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffHRC');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryHRC").value).length != 0 && (document.getElementById("EmailHRC").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentshrc",{country:document.getElementById("CountryHRC").value, FromEmail:document.getElementById("EmailHRC").value, information:CommentText, SAC:document.getElementById("SACHRC").value});
-            document.getElementById("CountryHRC").value=""
-            document.getElementById("EmailHRC").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendSPC()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffSPC');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountrySPC").value).length != 0 && (document.getElementById("EmailSPC").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsspc",{country:document.getElementById("CountrySPC").value, FromEmail:document.getElementById("EmailSPC").value, information:CommentText, SAC:document.getElementById("SACSPC").value});
-            document.getElementById("CountrySPC").value=""
-            document.getElementById("EmailSPC").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendDIS()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffDIS');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryDIS").value).length != 0 && (document.getElementById("EmailDIS").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsdis",{country:document.getElementById("CountryDIS").value, FromEmail:document.getElementById("EmailDIS").value, information:CommentText, SAC:document.getElementById("SACDIS").value});
-            document.getElementById("CountryDIS").value=""
-            document.getElementById("EmailDIS").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendSC()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffSC');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountrySC").value).length != 0 && (document.getElementById("EmailSC").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentssc",{country:document.getElementById("CountrySC").value, FromEmail:document.getElementById("EmailSC").value, information:CommentText, SAC:document.getElementById("SACSC").value});
-            document.getElementById("CountrySC").value=""
-            document.getElementById("EmailSC").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-
-	function sendAP()
-	{
-			var nicE = new nicEditors.findEditor('TextStuffAP');
-			var CommentText = nicE.getContent();
-
-		if((document.getElementById("CountryAP").value).length != 0 && (document.getElementById("EmailAP").value).length != 0 && CommentText.length !=0)
-			{
-            emailjs.send("default_service","amendmentsap",{country:document.getElementById("CountryAP").value, FromEmail:document.getElementById("EmailAP").value, information:CommentText, SAC:document.getElementById("SACAP").value});
-            document.getElementById("CountryAP").value=""
-            document.getElementById("EmailAP").value=""
-            alert("Form Submitted! Please Check Your email for Confirmation")
-			}
-		else
-			{
-				alert("Please Fill In The Required Fields")
-			}
-	}
-</script>
-<body data-target="#nino-navbar;" data-spy="scroll">
-
-	<!-- Header
-    ================================================== -->
-<header id="nino-header">
-
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div id="nino-headerInner">
-
-			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
-            <a class="navbar-brand" href="index.html">DIMUN</a>
-
-				<div class="container">
-
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="nino-menuItem pull-right">
-						<div class="collapse navbar-collapse pull-right" id="nino-navbar-collapse">
-							<ul class="nav navbar-nav">
-
-                                <div class="nav navbar-nav dropdown">
-								<li class="dropbtn"><a href="#" onclick="conference();">Conference</a></li>
-                                    <br><br>
-                                    <div class="dropdown-content">
-                                        <a href="Conference.html" onclick="Secretariat();">Secretariat</a>
-                                        <a href="Conference.html" onclick="StudentOfficers();">Student Officers</a>
-                                        <a href="Conference.html" onclick="Delegates();">Delegates</a>
-                                        <a href="Conference.html" onclick="ConferenceTheme();">Conference Theme</a>
-                                        <a href="Conference.html" onclick="StatementOfPurpose();">Statement Of Purpose</a>
-                                        <a href="Conference.html" onclick="MessageFromFounder();">Message From Founder</a>
-<a href="Conference.html" onclick="Alumni();">Alumni</a>
-                                    </div>
-                                </div>
-                                <li class="dropbtn"><a  href="Committees.html">Committees</a></li>
-								<li><a href="Directors.html">Directors</a></li>
-								<li><a href="Transport.html">Transport/Accommodation</a></li>
-								<li><a href="Spotlight.html">Spotlight</a></li>
-								<li><a href="Schedule.html">Schedule</a></li>
-                                <li><a href="Press.html">Press</a></li>
-                                <li><a href="Contact.html">Contact Us</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</div><!-- /.container-fluid -->
-			</nav>
-		</div>
-
-	</header>
-    <div class="container">
-		<h1>Theme: Beyond the Borders </h1>
-
-<h3>General Assembly 1: </h3>
-<p>Combating the spread of diseases in South-East Asia<br>
-Addressing the misconduct of UN peacekeepers<br>
-Improving access to clean water and medical infrastructure in Afghanistan<br>
-Ensuring voting security in transitional countries in the Balkan region</p>
+    <div class="container-fluid white wow slideInRight" id="committee-view1">
+        <section class="committee" id="ga1">
+            <h1 class="display-4 text-dark white">General Assembly 1</h1>
+            <hr text-light>
+            <h5 class="text-dark"> Combating the spread of diseases in South-East Asia
+                <br><br>Addressing the misconduct of UN peacekeepers
+                <br><br>Improving access to clean water and medical infrastructure in Afghanistan
+                <br><br>Ensuring voting security in transitional countries in the Balkan region
+            <h5>
+            <br>
+        </section>
+    </div>
+    <div class="container-fluid dark wow slideInRight" id="committee-view2">
+        <section class="committee" id="ga2">
+            <br><br>
+            <h1 class="display-4 text-light">General Assembly 2</h1>
+            <hr class="text-light">
+            <h5 class="text-light"> Measures to prevent the spread of mosquito-borne diseases
+                <br><br>Measures to aid the transition to renewable energy in developing East Asian nations
+                <br><br>Protecting the rights of non-combatant individuals in in the Yemeni Civil War
+                <br><br>Measures to recover radiation contaminated zones
+            <h5>
+                <br>
+        </section>
+    </div>
+    <br>
+    <div class="container-fluid white wow slideInRight" id="committee-view3">
+        <section class="committee" id="ENV">
+            <h1 class="display-4 text-dark white">Environment Commission</h1>
+            <hr>
+            <h5 class="text-dark"> Preventing the acceleration of climate change
+                <br><br>Measures to restore environments damaged by man-made disasters in the Caribbean
+                <br><br>Combating desertification in Sub-Saharan Africa
+                <br><br>Sustainable urban planning in rapidly developing countries
+            <h5>
+            <br>
+        </section>
+    </div>
+    <div class="container-fluid dark wow slideInRight" id="committee-view4">
+        <section class="committee" id="ECOSOC">
+            <br>
+            <h1 class="display-4 text-light">Economic and Social Council</h1>
+            <hr class="text-light">
+            <h5 class="text-light"> Addressing the issue of urban slums in South America
+                <br><br>Improving infrastructure for technological growth in developing African economies
+                <br><br>Addressing the economic crisis in Venezuela
+                <br><br>Addressing the role of the internet in international crime
+            <h5>
+                <br>
+        </section>
+    </div>
+    <br>
+    <div class="container-fluid white wow slideInRight" id="committee-view5">
+        <section class="committee" id="HRC">
+            <h1 class="display-4 text-dark white">Human Rights Council</h1>
+            <hr>
+            <h5 class="text-dark"> Measures to protect the movement of refugees
+                <br><br>Measures to combat international human trafficking
+                <br><br>Addressing the issue of child labourers in Asia
+                <br><br>Measures to rehabilitate internally displaced persons
+            <h5>
+            <br>
+        </section>
+    </div>
+    <div class="container-fluid dark wow slideInRight" id="committee-view6">
+        <section class="committee" id="SPC">
+            <br>
+            <h1 class="display-4 text-light">Special Reference</h1>
+            <hr class="text-light">
+            <h5 class="text-light">Measures to improve recognition of Kurdish minorities in the Middle East
+                <br><br>Measures to facilitate peace discussion with remaining ISIS groups in Syria
+                <br><br>Measures to reduce violence from drug cartels in Mexico
+                <br><br>Preventing the distribution of counterfeit medicine
+            <h5>
+                <br>
+        </section>
+    </div>
+    <br>
+    <div class="container-fluid white wow slideInRight" id="committee-view7">
+        <section class="committee" id="DIS">
+            <h1 class="display-4 text-dark white">Disarment Council</h1>
+            <hr>
+            <h5 class="text-dark"> Preventing the militarization of outer space
+                <br><br>Addressing the issue of biological weapons in warfare
+                <br><br>Facilitating the aftermath of the Syrian civil war
+                <br><br>Providing a resolution for the possibility of a nuclear crisis
+            <h5>
+            <br>
+        </section>
+    </div>
+    <div class="container-fluid dark wow slideInRight" id="committee-view8">
+        <section class="committee" id="SC">
+            <br>
+            <h1 class="display-4 text-light">Security Council</h1>
+            <hr class="text-light">
+            <h5 class="text-light"> The regulation of international arms corporations
+                <br><br>Facilitating communication and the peaceful resolution between Israel and Palestine
+                <br><br>De-escalation of nuclear armament in the DPRK
+                <br><br>Measures to reduce the armament of paramilitary forces in the Libyan Civil War
+            <h5>
+                <br>
+        </section>
+    </div>
+    <br>
+    <div class="container-fluid white wow slideInRight" id="committee-view9">
+        <section class="committee" id="AP">
+            <h1 class="display-4 text-dark white">Advisory Panel</h1>
+            <hr>
+            <h5 class="text-dark"> The question of humanitarian exemptions in sanction regimes
+                <br><br>Rebuilding infrastructure in the aftermath of the Syrian conflict
+            <h5>
+            <br>
+        </section>
+    </div>
 
 
-<h3>General Assembly 2: </h3>
-<p>Measures to prevent the spread of mosquito-borne diseases<br>
-	Measures to aid the transition to renewable energy in developing East Asian nations<br>
-Protecting the rights of non-combatant individuals in in the Yemeni Civil War<br>
-Measures to recover radiation contaminated zones</p>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- DIMUN Javascript -->
+    <script type="text/javascript" src="js/dimun.js"></script>
 
-
-<h3>Environment Commission:</h3>
-<p>Preventing the acceleration of climate change<br>
-	Measures to restore environments damaged by man-made disasters in the Caribbean<br>
-Combating desertification in Sub-Saharan Africa<br>
-Sustainable urban planning in rapidly developing countries</p>
-
-
-<h3>Economic and Social Council:</h3>
-<p>Addressing the issue of urban slums in South America
-<br>
-Improving infrastructure for technological growth in developing African economies
-<br>
-Addressing the economic crisis in Venezuela<br>
-Addressing the role of the internet in international crime</p>
-
-
-<h3>Human Rights Council:</h3>
-<p>Measures to protect the movement of refugees<br>
-Measures to combat international human trafficking<br>
-Addressing the issue of child labourers in Asia<br>
-Measures to rehabilitate internally displaced persons</p>
-
-
-<h3>Special Conference:</h3>
-<p>Measures to improve recognition of Kurdish minorities in the Middle East<br>
-Measures to facilitate peace discussion with remaining ISIS groups in Syria<br>
-Measures to reduce violence from drug cartels in Mexico<br>
-Preventing the distribution of counterfeit medicine</p>
-
-
-<h3>Disarmament Council:</h3>
-<p>preventing the militarization of outer space<br>
-Addressing the issue of biological weapons in warfare<br>
-Facilitating the aftermath of the Syrian civil war<br>
-Providing a resolution for the possibility of a nuclear crisis</p>
-
-
-<h3>Security Council:</h3>
-<p>The regulation of international arms corporations<br>
-Facilitating communication and the peaceful resolution between Israel and Palestine<br>
-De-escalation of nuclear armament in the DPRK<br>
-Measures to reduce the armament of paramilitary forces in the Libyan Civil War</p>
-
-
-<h3>Advisory Panel:</h3>
-<p>The question of humanitarian exemptions in sanction regimes<br>
-Rebuilding infrastructure in the aftermath of the Syrian conflict</p>
-	</div>
 </body>
+
 </html>
