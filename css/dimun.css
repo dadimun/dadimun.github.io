@@ -262,7 +262,7 @@ html,body {
     width: 20%;
 }
 
-.active {
+.list-group-item.active {
     border-color: #619ACD !important;
     background-color: #619ACD !important;
 }
