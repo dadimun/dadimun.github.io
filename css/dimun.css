@@ -3,6 +3,12 @@ html,body {
     height: 100%;
 }
 
+#about {
+    height: 100vh;
+    background-color: white;
+    padding: 6rem;
+}
+
 .view1 {
     position: relative;
 
@@ -148,7 +154,7 @@ html,body {
     position: absolute;
     z-index: 3;
     top:45%;
-    left: 30%;
+    left: 20%;
 
     width: 28rem;
     height: auto;
@@ -162,10 +168,12 @@ html,body {
     font-size: 3rem;
 }
 
-.about-text {
+.theme-text {
     z-index: 6;
 
-    padding: 3rem;
+    padding: 5rem;
+    padding-left: 7%;
+    padding-right: 7%;
 
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
@@ -190,6 +198,7 @@ html,body {
 
 .navbar {
     background-color: transparent;
+    z-index: 9999;
 }
 
 .top-nav-collapse {

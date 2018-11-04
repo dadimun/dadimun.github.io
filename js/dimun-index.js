@@ -1,7 +1,7 @@
 var controller = new ScrollMagic.Controller();
 
-new ScrollMagic.Scene({triggerElement: '#about-text',duration:'120%',triggerHook:0.8})
-.setClassToggle( '#about-text','fade-in')
+new ScrollMagic.Scene({triggerElement: '#theme-text',duration:'120%',triggerHook:0.8})
+.setClassToggle( '#theme-text','fade-in')
 .addTo(controller);
 
 new ScrollMagic.Scene({triggerElement: '#view1',triggerHook:1,duration:'200%'})
@@ -12,16 +12,17 @@ new ScrollMagic.Scene({triggerElement: '#view1',triggerHook:0.9,duration:'200%'}
 .setTween("#view1-text", {y: "20%",ease:Linear.easeNone})
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: '#view2',triggerHook:0.1,duration:'200%'})
+new ScrollMagic.Scene({triggerElement: '.view2',triggerHook:'1',duration:'200%'})
 .setTween("#view2-left-image-bg", {x: "5%",ease:Linear.easeNone})
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: '#view2',triggerHook:0.1,duration:'200%'})
+new ScrollMagic.Scene({triggerElement: '.view2',triggerHook:'1',duration:'200%'})
 .setTween("#view2-image-center img", {y: "20%",ease:Linear.easeNone})
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: '#view2',triggerHook:0.1,duration:'200%'})
+new ScrollMagic.Scene({triggerElement: '.view2',triggerHook:'1',duration:'200%'})
 .setTween("#view2-image-right img", {y: "-40%",ease:Linear.easeNone})
+.addIndicators()
 .addTo(controller);
 
 var wiping = new TimelineMax()
