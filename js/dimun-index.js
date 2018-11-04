@@ -22,7 +22,6 @@ new ScrollMagic.Scene({triggerElement: '.view2',triggerHook:'1',duration:'200%'}
 
 new ScrollMagic.Scene({triggerElement: '.view2',triggerHook:'1',duration:'200%'})
 .setTween("#view2-image-right img", {y: "-40%",ease:Linear.easeNone})
-.addIndicators()
 .addTo(controller);
 
 var wiping = new TimelineMax()
