@@ -387,6 +387,16 @@ html,body {
     background-size: cover;
 }
 
+.Jackel-image {
+    min-height: 300px;
+    width: 100%;
+    background: url(../img/FinalJackel.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .modal-dialog {
     max-width: 80%;
 }
