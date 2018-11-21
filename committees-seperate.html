@@ -20,11 +20,11 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
-<body data-spy="scroll" data-target="#scroll-list" data-offset="300">
+<body data-spy="scroll" data-target="#scroll-list" data-offset="250">
     <header>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <a class="navbar-brand text-dark" href="index.html"><img src=img/logo_black.png height=82 width=80><strong> DIMUN IX</strong></a>
+            <a class="navbar-brand text-dark" href="index.html"><strong>DIMUN IX</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fas fa-list text-dark"></span>
@@ -50,7 +50,7 @@
                     <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Logistics</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="transport.html">Transport</a>
-                        <a class="dropdown-item" href="accommodation.html">Accommodation</a>
+                        <a class="dropdown-item" href="accomadation.html">Accomadation</a>
                         <a class="dropdown-item" href="schedule.html">Schedule</a>
                     </div>
                 </li>
@@ -71,48 +71,9 @@
 </header>
 
     <section class="section-header text-center" id="section-header">
-        <strong><h1 class="display-1">Accommodation</h1></strong>
+        <strong><h1 class="display-1">COMMITTEES</h1></strong>
     </section>
 
-    <section>
-        <div class="text-center container-fluid first">
-            <div class="team">
-                <h1>Recommended Accommodation</h1>
-                <hr>
-                <div class="row">
-                    <div class="col-md-5">
-                        <h2>Crowne Plaza</h2>
-                        <p>Crowne Plaza International Airport Beijing offers 5-star rooms and 24-hour service. It is located just 6.7 km away from the Beijing International Airport, and provides a free shuttle bus every 30 minutes with advance reservation. It is also directly opposite to the China International Exhibition Centre and a 30-minute drive from the city centre.
-                        <hr>
-                        Location: 60 Fuqian First Street, Beijing International Airport Area, Shunyi Disctrict, 101312 Shunyi, China</p>
-                    </div>
-                    <div class="col-md-7">
-                        <div id="container-1" style="height: 60vh;width:100%;">
-                        </div>
-                        <br>
-
-                    </div>
-                </div>
-                <hr>
-                <br>
-                <div class="row">
-                    <div class="col-md-5">
-                        <h2>Citic Hotel</h2>
-                        <p>Located just a few minutes from the Beijing Capital Airport, the hotel offers free airport shuttle, city and exhibition shuttle services. Guests have access to a recreation centre, an indoor and outdoor pool, and several international restaurants and casual cafes.
-                        <hr>
-                        Location: No.9 Xiao Tianzhu Road, Capital International Airport, Beijing, China, 100621</p>
-                    </div>
-                    <div class="col-md-7">
-                        <div id="container-2" style="height: 60vh;width:100%;">
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 
     <!-- SCRIPTS -->
@@ -126,23 +87,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- DIMUN Javascript -->
     <script type="text/javascript" src="js/dimun.js"></script>
-    <!-- Baidu map -->
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8BB7F0E5C9C77BD6B9B655DB928B74B6E2D838FD"></script>
-    <script>
-        var map = new BMap.Map("container-1");
-        var point = new BMap.Point(116.563037, 40.069701);
-        map.centerAndZoom(point, 15);
-        map.enableScrollWheelZoom(true);
-        var marker = new BMap.Marker(point);
-        map.addOverlay(marker);
-
-        var map1 = new BMap.Map("container-2");
-        var point1 = new BMap.Point(116.596795, 40.055278);
-        map1.centerAndZoom(point1, 15);
-        map1.enableScrollWheelZoom(true);
-        var marker1 = new BMap.Marker(point1);
-        map1.addOverlay(marker1);
-    </script>
 
 </body>
 
