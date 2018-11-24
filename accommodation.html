@@ -81,10 +81,10 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-5">
-                        <h2>Crowne Plaza</h2>
-                        <p>Crowne Plaza International Airport Beijing offers 5-star rooms and 24-hour service. It is located just 6.7 km away from the Beijing International Airport, and provides a free shuttle bus every 30 minutes with advance reservation. It is also directly opposite to the China International Exhibition Centre and a 30-minute drive from the city centre.
+                        <h2>Hilton Beijing Capital Airport</h2>
+                        <p>Hilton Beijing Capital Airport is situated just 5 minutes by shuttle bus from the airport and the Beijing airport rail link. Our 322 guest rooms feature modern Oriental décor, soundproofed floor-to-ceiling windows and WiFi access.
                         <hr>
-                        Location: 60 Fuqian First Street, Beijing International Airport Area, Shunyi Disctrict, 101312 Shunyi, China</p>
+                        Location: Terminal 3, Sanjing Road, Beijing Capital Inter, China</p>
                     </div>
                     <div class="col-md-7">
                         <div id="container-1" style="height: 60vh;width:100%;">
@@ -93,7 +93,6 @@
 
                     </div>
                 </div>
-                <hr>
                 <br>
                 <div class="row">
                     <div class="col-md-5">
@@ -101,6 +100,7 @@
                         <p>Located just a few minutes from the Beijing Capital Airport, the hotel offers free airport shuttle, city and exhibition shuttle services. Guests have access to a recreation centre, an indoor and outdoor pool, and several international restaurants and casual cafes.
                         <hr>
                         Location: No.9 Xiao Tianzhu Road, Capital International Airport, Beijing, China, 100621</p>
+                        <a href="https://github.com/dadimun/pdfs/raw/master/CITIC.pdf">Booking information</a>
                     </div>
                     <div class="col-md-7">
                         <div id="container-2" style="height: 60vh;width:100%;">
@@ -129,12 +129,6 @@
     <!-- Baidu map -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8BB7F0E5C9C77BD6B9B655DB928B74B6E2D838FD"></script>
     <script>
-        var map = new BMap.Map("container-1");
-        var point = new BMap.Point(116.563037, 40.069701);
-        map.centerAndZoom(point, 15);
-        map.enableScrollWheelZoom(true);
-        var marker = new BMap.Marker(point);
-        map.addOverlay(marker);
 
         var map1 = new BMap.Map("container-2");
         var point1 = new BMap.Point(116.596795, 40.055278);
@@ -142,6 +136,14 @@
         map1.enableScrollWheelZoom(true);
         var marker1 = new BMap.Marker(point1);
         map1.addOverlay(marker1);
+
+        var map2 = new BMap.Map("container-1");
+        var point2 = new BMap.Point(116.626084, 40.055071);
+        map2.centerAndZoom(point2, 15);
+        map2.enableScrollWheelZoom(true);
+        var marker2 = new BMap.Marker(point2);
+        map2.addOverlay(marker2);
+
     </script>
 
 </body>
