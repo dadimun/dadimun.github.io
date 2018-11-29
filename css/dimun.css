@@ -5,9 +5,10 @@ html,body {
 
 #about {
     height: 100vh;
-    background-color: white;
     padding: 6rem;
     padding-top: 2rem;
+
+    background-color: white;
 }
 
 .view1 {
@@ -173,8 +174,8 @@ html,body {
     z-index: 6;
 
     padding: 5rem;
-    padding-left: 7%;
     padding-right: 7%;
+    padding-left: 7%;
 
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
@@ -198,8 +199,9 @@ html,body {
 
 
 .navbar {
-    background-color: transparent;
     z-index: 9999;
+
+    background-color: transparent;
 }
 
 .top-nav-collapse {
@@ -288,8 +290,9 @@ html,body {
 }
 
 .Jennifer-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalJennifer.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -298,8 +301,9 @@ html,body {
 }
 
 .Kevin-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalKevin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -308,8 +312,9 @@ html,body {
 }
 
 .Yixin-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalYixin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,8 +323,9 @@ html,body {
 }
 
 .Seojin-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalSeojin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -328,8 +334,9 @@ html,body {
 }
 
 .Miksa-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalMiksa.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -338,8 +345,9 @@ html,body {
 }
 
 .Mark-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalMark.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -348,8 +356,9 @@ html,body {
 }
 
 .Daniel-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalDaniel.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -358,8 +367,9 @@ html,body {
 }
 
 .Andrew-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalAndrew.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -368,8 +378,9 @@ html,body {
 }
 
 .Adelle-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalAdelle.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -378,8 +389,9 @@ html,body {
 }
 
 .Jinho-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalJinho.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -388,8 +400,9 @@ html,body {
 }
 
 .Jackel-image {
-    min-height: 300px;
     width: 100%;
+    min-height: 300px;
+
     background: url(../img/FinalJackel.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

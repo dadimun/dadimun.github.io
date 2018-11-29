@@ -1,0 +1,75 @@
+.section-header-com {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: 17vh;
+    padding: 0;
+
+    background: url(../img/view1.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center 17%;
+}
+
+.com-head {
+    margin: 0;
+    padding: 0;
+}
+
+.com-pic {
+    overflow: hidden;
+}
+
+.com-text {
+    padding: 50px;
+}
+
+.chairs {
+    height: 100%;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.container-com {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50vh;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50vh;
+  height:0;
+  transition: .5s ease;
+}
+
+.container-com:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-com {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
