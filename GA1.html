@@ -140,14 +140,49 @@
                     <div class="overlay">
                         <div class="text-com">Mina Xiao</div>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
     </section>
-
-
-
+    
+    <!--
+    ##I Copied the following section from Shenyi's code
+    <section>
+    <h1 align="center">Ammendments</h1>
+    <hr><br>
+    <div class="team", align="center">
+            <form>
+	           <input type="text", name="CountryGA", placeholder="Country", style="width:80%;height:100%;"><br><br>
+	           <input type="text", name="EmailGA", placeholder="Enter your email", style="width:80%;height:100%;"><br><br>
+	               <select style="width:80%;height:100%;">
+		              <option value="add">Add</option>
+                      <option value="change">Change</option>
+		              <option value="strike">Strike</option>
+                    </select><br><br>
+                <input type="text", name="SACGA", placeholder="Notes", style="width:80%; height:900%;"><br><br>
+            </form>
+        <button style="width:80%;height:100%;", onclick="sendGA1()">Submit</button>
+        <br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </section>-->
+    
     <!-- SCRIPTS -->
+    
+    <!--
+    ##I Copied the following section from Shenyi's code...same function.
+    <script>
+	function send()
+	{
+		var nicE = new nicEditors.findEditor('TextStuffGA');
+			var CommentText = nicE.getContent();
+			
+            emailjs.send("default_service","amendments",{country:document.getElementById("CountryGA").value, FromEmail:document.getElementById("EmailGA").value, information:CommentText, SAC:document.getElementById("SACGA").value});
+            document.getElementById("CountryGA").value=""
+            document.getElementById("EmailGA").value=""
+            alert("Form Submitted!")
+	}
+    </script>-->
+    
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
