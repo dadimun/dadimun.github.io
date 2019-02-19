@@ -145,44 +145,110 @@
         </div>
     </section>
     
-    <!--
-    ##I Copied the following section from Shenyi's code
-    <section>
-    <h1 align="center">Ammendments</h1>
-    <hr><br>
-    <div class="team", align="center">
-            <form>
-	           <input type="text", name="CountryGA", placeholder="Country", style="width:80%;height:100%;"><br><br>
-	           <input type="text", name="EmailGA", placeholder="Enter your email", style="width:80%;height:100%;"><br><br>
-	               <select style="width:80%;height:100%;">
-		              <option value="add">Add</option>
-                      <option value="change">Change</option>
-		              <option value="strike">Strike</option>
-                    </select><br><br>
-                <input type="text", name="SACGA", placeholder="Notes", style="width:80%; height:900%;"><br><br>
-            </form>
-        <button style="width:80%;height:100%;", onclick="sendGA1()">Submit</button>
-        <br><br><br><br><br><br><br><br><br><br>
+    <section align="center">
+        <div class="text-center container">
+            <!-- Section: Contact v.2 -->
+    <section class="my-5">
+
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold text-center my-5">Ammendments<hr></h2>
+
+      <!-- Section description -->
+        
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-9 mb-md-0 mb-5">
+
+          <form>
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="countryGA1" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="countryGA1" class="">Country</label>
+                </div>
+              </div>
+                
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="email" id="emailGA1" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="emailGA1" class="">Email</label>
+                </div>
+              </div>
+                
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                     <select type="text", id="SCA_GA1", class="form-control validate">
+                        <option value="Strike">Strike</option>
+						<option value="Change">Change</option>
+						<option value="Add">Add</option>
+				    </select>
+                </div>
+              </div>    
+            -->
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            
+              <!-- Grid column -->
+             
+              <!-- Grid column -->
+
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb=0">
+                  <textarea type="text" id="notesGA1" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="notesGA1">Your message</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </form>
+
+          <div class="text-center text-md-center">
+            <a class="btn btn-primary btn-md" id="send">Send</a>
+          </div>
+
         </div>
-    </section>-->
+        </div>
+
+        
+            </section>
+        </div>
+    </section>
     
-    <!-- SCRIPTS -->
+    <section align="center">
+    <div class="text-center container">
     
-    <!--
-    ##I Copied the following section from Shenyi's code...same function.
-    <script>
-	function send()
-	{
-		var nicE = new nicEditors.findEditor('TextStuffGA');
-			var CommentText = nicE.getContent();
-			
-            emailjs.send("default_service","amendments",{country:document.getElementById("CountryGA").value, FromEmail:document.getElementById("EmailGA").value, information:CommentText, SAC:document.getElementById("SACGA").value});
-            document.getElementById("CountryGA").value=""
-            document.getElementById("EmailGA").value=""
-            alert("Form Submitted!")
-	}
-    </script>-->
+    <!-- Section: Contact v.2 -->
+    <section class="my-5">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Resolutions<hr></h2>
+        <p>Please upload your resolutions here</p>
+            
+            
+            
+            
+    </section>
+    </div>
+    </section>
     
+    <!-- SCRIPTS --> 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -193,6 +259,30 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- DIMUN Javascript -->
     <script type="text/javascript" src="js/dimun.js"></script>
+    
+    <!-- FORM -->
+    
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_KUHUUH4eKED3JzYi9HB29");
+    })();
+
+    $("#send").click(function(){
+        if ( document.getElementById("countryGA1").checkValidity() && document.getElementById("emailGA1").checkValidity() && document.getElementById("SCA_GA1").checkValidity() && document.getElementById("notesGA1").checkValidity()){
+            var from = $("#countryGA1").val();
+            var email = $("#emailGA1").val();
+            var message = $("#SCA_GA1").val();
+            var subject = $("#notesGA1").val();
+
+            }
+
+            console.log(template_params);
+            emailjs.send(service_id,template_id,template_params);
+
+            alert("request sent.")
+        };
+    });
+    </script>
 
 </body>
 
