@@ -168,23 +168,23 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" id="countryGA1" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="countryGA1" class="">Country</label>
+                  <input type="text" id="country" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="country" class="">Country</label>
                 </div>
               </div>
 
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="email" id="emailGA1" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="emailGA1" class="">Email</label>
+                  <input type="email" id="email" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="email" class="">Email</label>
                 </div>
               </div>
 
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                     <select type="text", id="SCA_GA1", class="form-control validate">
+                     <select type="text", id="SCA", class="form-control validate">
                         <option value="Strike">Strike</option>
 						<option value="Change">Change</option>
 						<option value="Add">Add</option>
@@ -208,8 +208,8 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb=0">
-                  <textarea type="text" id="notesGA1" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
-                  <label data-error="invalid" data-success="valid" for="notesGA1">Your message</label>
+                  <textarea type="text" id="notes" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="notes">Content</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -239,9 +239,7 @@
 
     <section align="center">
     <div class="text-center container">
-
-    </section>
-    </div>
+        </div>
     </section>
 
     <!-- SCRIPTS -->
@@ -257,26 +255,46 @@
     <script type="text/javascript" src="js/dimun.js"></script>
 
     <!-- FORM -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
     <script type="text/javascript">
-    (function(){
-        emailjs.init("user_KUHUUH4eKED3JzYi9HB29");
-    })();
-
+    
     $("#send").click(function(){
-        if ( document.getElementById("countryGA1").checkValidity() && document.getElementById("emailGA1").checkValidity() && document.getElementById("SCA_GA1").checkValidity() && document.getElementById("notesGA1").checkValidity()){
-            var from = $("#countryGA1").val();
-            var email = $("#emailGA1").val();
-            var message = $("#SCA_GA1").val();
-            var subject = $("#notesGA1").val();
+            document.getElementById("country").checkValidity() 
+            && document.getElementById("email").checkValidity()
+            && document.getElementById("SCA")
+            && document.getElementById("notes").checkValidity()
+        
+            var country = $("#country").val();
+            var email = $("#email").val();
+            var SCA = $("#SCA").val();
+            var notes = $("#notes").val();
+            var committee = "GA1";
+            
+            var template_params = {
+            "country": country,
+            "committee": committee,
+            "SCA": SCA,
+            "notes": notes
+                
+            var from = $("#contact-name").val();
+            var email = $("#contact-email").val();
+            var message = $("#contact-message").val();
+            var subject = $("#contact-subject").val();
 
-            }
+            var template_params = {
+                "subject": subject,
+                "from_name": from,
+                "message_html": message,
+                "sender_email": email
+            }  
 
-            console.log(template_params);
-            emailjs.send(service_id,template_id,template_params);
+            var service_id = "default_service";
+            var template_id = "template_B6jUoXsM";
+            emailjs.send(service_id, template_id, template_params);
 
-            alert("request sent.")
-        };
+            alert("Amendment sent.")
+        
     });
     </script>
 
