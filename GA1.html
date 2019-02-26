@@ -259,6 +259,10 @@
 
     <script type="text/javascript">
     
+    (function(){
+        emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
+    })();
+        
     $("#send").click(function(){
             document.getElementById("country").checkValidity() 
             && document.getElementById("email").checkValidity()
@@ -269,28 +273,16 @@
             var email = $("#email").val();
             var SCA = $("#SCA").val();
             var notes = $("#notes").val();
-            var committee = "GA1";
             
             var template_params = {
+            "email": email, 
             "country": country,
-            "committee": committee,
             "SCA": SCA,
             "notes": notes
-                
-            var from = $("#contact-name").val();
-            var email = $("#contact-email").val();
-            var message = $("#contact-message").val();
-            var subject = $("#contact-subject").val();
-
-            var template_params = {
-                "subject": subject,
-                "from_name": from,
-                "message_html": message,
-                "sender_email": email
-            }  
+            };
 
             var service_id = "default_service";
-            var template_id = "template_B6jUoXsM";
+            var template_id = "GA1";
             emailjs.send(service_id, template_id, template_params);
 
             alert("Amendment sent.")

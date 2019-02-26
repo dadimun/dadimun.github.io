@@ -145,7 +145,97 @@
         </div>
     </section>
 
+    <section align="center">
+        <div class="text-center container">
+            <!-- Section: Contact v.2 -->
+    <section class="my-5">
 
+      <!-- Section description -->
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-5">
+
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Ammendments<hr></h2>
+
+          <form>
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="country" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="country" class="">Country</label>
+                </div>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="email" id="email" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="email" class="">Email</label>
+                </div>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                     <select type="text", id="SCA", class="form-control validate">
+                        <option value="Strike">Strike</option>
+						<option value="Change">Change</option>
+						<option value="Add">Add</option>
+				    </select>
+                </div>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb=0">
+                  <textarea type="text" id="notes" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="notes">Content</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </form>
+
+          <div class="text-center text-md-center">
+            <a class="btn btn-primary btn-md" id="send">Send</a>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 mb-md-0 mb-5">
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Resolutions<hr></h2>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1pbxsuGS8SXqgVLCFImsGqdH24Sb7nVi1#list" style=" border:0;width:100%;height:100%;"></iframe>
+        </div>
+
+        </div>
+
+            </section>
+
+        </div>
+    </section>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -158,7 +248,42 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- DIMUN Javascript -->
     <script type="text/javascript" src="js/dimun.js"></script>
+    
+    <!-- FORM -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
+    <script type="text/javascript">
+    
+    (function(){
+        emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
+    })();
+        
+    $("#send").click(function(){
+            document.getElementById("country").checkValidity() 
+            && document.getElementById("email").checkValidity()
+            && document.getElementById("SCA")
+            && document.getElementById("notes").checkValidity()
+        
+            var country = $("#country").val();
+            var email = $("#email").val();
+            var SCA = $("#SCA").val();
+            var notes = $("#notes").val();
+            
+            var template_params = {
+            "email": email, 
+            "country": country,
+            "SCA": SCA,
+            "notes": notes
+            };
+
+            var service_id = "default_service";
+            var template_id = "SPC";
+            emailjs.send(service_id, template_id, template_params);
+
+            alert("Amendment sent.")
+        
+    });
+    </script>
 </body>
 
 </html>
