@@ -140,49 +140,109 @@
                     <div class="overlay">
                         <div class="text-com">Mina Xiao</div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
-    
-    <!--
-    ##I Copied the following section from Shenyi's code
-    <section>
-    <h1 align="center">Ammendments</h1>
-    <hr><br>
-    <div class="team", align="center">
-            <form>
-	           <input type="text", name="CountryGA", placeholder="Country", style="width:80%;height:100%;"><br><br>
-	           <input type="text", name="EmailGA", placeholder="Enter your email", style="width:80%;height:100%;"><br><br>
-	               <select style="width:80%;height:100%;">
-		              <option value="add">Add</option>
-                      <option value="change">Change</option>
-		              <option value="strike">Strike</option>
-                    </select><br><br>
-                <input type="text", name="SACGA", placeholder="Notes", style="width:80%; height:900%;"><br><br>
-            </form>
-        <button style="width:80%;height:100%;", onclick="sendGA1()">Submit</button>
-        <br><br><br><br><br><br><br><br><br><br>
+
+    <section align="center">
+        <div class="text-center container">
+            <!-- Section: Contact v.2 -->
+    <section class="my-5">
+
+      <!-- Section description -->
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-5">
+
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Ammendments<hr></h2>
+
+          <form>
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="country" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="country" class="">Country</label>
+                </div>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="email" id="email" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="email" class="">Email</label>
+                </div>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                     <select type="text", id="SCA", class="form-control validate">
+                        <option value="Strike">Strike</option>
+						<option value="Change">Change</option>
+						<option value="Add">Add</option>
+				    </select>
+                </div>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb=0">
+                  <textarea type="text" id="notes" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="notes">Content</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </form>
+
+          <div class="text-center text-md-center">
+            <a class="btn btn-primary btn-md" id="send">Send</a>
+          </div>
+
         </div>
-    </section>-->
-    
+
+        <div class="col-md-6 mb-md-0 mb-5">
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Resolutions<hr></h2>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1pbxsuGS8SXqgVLCFImsGqdH24Sb7nVi1#list" style=" border:0;width:100%;height:100%;"></iframe>
+        </div>
+
+        </div>
+
+            </section>
+
+        </div>
+    </section>
+
+    <section align="center">
+    <div class="text-center container">
+        </div>
+    </section>
+
     <!-- SCRIPTS -->
-    
-    <!--
-    ##I Copied the following section from Shenyi's code...same function.
-    <script>
-	function send()
-	{
-		var nicE = new nicEditors.findEditor('TextStuffGA');
-			var CommentText = nicE.getContent();
-			
-            emailjs.send("default_service","amendments",{country:document.getElementById("CountryGA").value, FromEmail:document.getElementById("EmailGA").value, information:CommentText, SAC:document.getElementById("SACGA").value});
-            document.getElementById("CountryGA").value=""
-            document.getElementById("EmailGA").value=""
-            alert("Form Submitted!")
-	}
-    </script>-->
-    
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -193,6 +253,42 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- DIMUN Javascript -->
     <script type="text/javascript" src="js/dimun.js"></script>
+
+    <!-- FORM -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+
+    <script type="text/javascript">
+    
+    (function(){
+        emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
+    })();
+        
+    $("#send").click(function(){
+            document.getElementById("country").checkValidity() 
+            && document.getElementById("email").checkValidity()
+            && document.getElementById("SCA")
+            && document.getElementById("notes").checkValidity()
+        
+            var country = $("#country").val();
+            var email = $("#email").val();
+            var SCA = $("#SCA").val();
+            var notes = $("#notes").val();
+            
+            var template_params = {
+            "email": email, 
+            "country": country,
+            "SCA": SCA,
+            "notes": notes
+            };
+
+            var service_id = "default_service";
+            var template_id = "GA1";
+            emailjs.send(service_id, template_id, template_params);
+
+            alert("Amendment sent.")
+        
+    });
+    </script>
 
 </body>
 
