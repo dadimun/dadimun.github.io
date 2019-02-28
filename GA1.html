@@ -158,7 +158,7 @@
         <!-- Grid column -->
         <div class="col-md-6 mb-md-0 mb-5">
 
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Ammendments<hr></h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Amendmentss<hr></h2>
 
           <form>
 
@@ -258,24 +258,24 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
     <script type="text/javascript">
-    
+
     (function(){
         emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
     })();
-        
+
     $("#send").click(function(){
-            document.getElementById("country").checkValidity() 
+            document.getElementById("country").checkValidity()
             && document.getElementById("email").checkValidity()
             && document.getElementById("SCA")
             && document.getElementById("notes").checkValidity()
-        
+
             var country = $("#country").val();
             var email = $("#email").val();
             var SCA = $("#SCA").val();
             var notes = $("#notes").val();
-            
+
             var template_params = {
-            "email": email, 
+            "email": email,
             "country": country,
             "SCA": SCA,
             "notes": notes
@@ -286,7 +286,7 @@
             emailjs.send(service_id, template_id, template_params);
 
             alert("Amendment sent.")
-        
+
     });
     </script>
 
