@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="5">
     <title>DIMUN IX</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="logo.ico">
@@ -158,7 +159,7 @@
         <!-- Grid column -->
         <div class="col-md-6 mb-md-0 mb-5">
 
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Amendmentss<hr></h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Amendments<hr></h2>
 
           <form>
 
@@ -181,6 +182,13 @@
                 </div>
               </div>
 
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="clause" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="clause" class="">Clause number</label>
+                </div>
+              </div>
+
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
@@ -192,17 +200,7 @@
                 </div>
               </div>
             </div>
-            <!-- Grid row -->
 
-            <!-- Grid row -->
-
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-
-            <!-- Grid row -->
-
-            <!-- Grid row -->
             <div class="row">
 
               <!-- Grid column -->
@@ -262,19 +260,20 @@
     $("#send").click(function(){
             document.getElementById("country").checkValidity()
             && document.getElementById("email").checkValidity()
-            && document.getElementById("SCA")
-            && document.getElementById("notes").checkValidity()
+            && document.getElementById("clause").checkValidity();
 
             var country = $("#country").val();
             var email = $("#email").val();
             var SCA = $("#SCA").val();
             var notes = $("#notes").val();
+            var clause = $("#clause").val();
 
             var template_params = {
             "email": email,
             "country": country,
             "SCA": SCA,
-            "notes": notes
+            "notes": notes,
+            "clause": clause
             };
 
             var service_id = "default_service";
