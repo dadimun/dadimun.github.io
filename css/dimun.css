@@ -119,7 +119,7 @@ html,body {
     height: auto;
     min-height: 100vh;
 
-    background: url(../img/view2-left-bg.jpeg) no-repeat center center;
+    background: url(../img/Photos_New/2561551713126_.pic_hd.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -136,7 +136,7 @@ html,body {
     min-height: 100vh;
     padding:0;
 
-    background: url(../img/view3-right-bg.jpg) no-repeat center center;
+    background: url(../img/Photos_New/2571551713137_.pic_hd.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -201,7 +201,7 @@ html,body {
 .navbar {
     z-index: 9999;
 
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .top-nav-collapse {
@@ -230,14 +230,14 @@ html,body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 89% 54%, 78% 54%, 68% 50%, 60% 54%, 50% 53%, 43% 51%, 33% 52%, 24% 53%, 15% 51%, 5% 52%, 0 50%);
 }
 
-@font-face { font-family: "DINCondensed Bold"; src: url('../font/DINCondensed-Bold.ttf'); }
+@font-face { font-family: "bebas-neue";}
 
 .display-1 {
     opacity: 1;
     background: -webkit-linear-gradient(#619ACD, transparent);
     -webkit-background-clip: text;
 
-    font-family: "DINCondensed Bold",serif;
+    font-family: "bebas-neue",sans-serif;
     font-size:12rem;
 
     -webkit-text-fill-color: transparent;
