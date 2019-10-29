@@ -237,7 +237,7 @@ html,body {
     background: -webkit-linear-gradient(#619ACD, transparent);
     -webkit-background-clip: text;
 
-    font-family: "bebas-neue",sans-serif;
+    font-family: "bebas-neue", sans-serif;
     font-size:12rem;
 
     -webkit-text-fill-color: transparent;
@@ -289,88 +289,44 @@ html,body {
     padding-left: 10%;
 }
 
-.Jennifer-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalJennifer.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Kevin-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalKevin.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .Yixin-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalYixin.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalYixin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Seojin-image {
+.Erik-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalSeojin.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalErik.JPG) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Miksa-image {
+.Ethan-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalMiksa.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalEthan.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Mark-image {
+.Guanrong-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalMark.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Daniel-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalDaniel.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Andrew-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalAndrew.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalGuanrong.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -381,29 +337,95 @@ html,body {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalAdelle.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalAdelle.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Jinho-image {
+.Andrew-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalJinho.jpg) no-repeat center center;
+    background: url(../img/Exec\ Photos/FinalAndrew.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Jackel-image {
+.JinHo-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalJackel.jpg) no-repeat center center;
+    background: url(../img/Exec Photos/FinalJinho.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Sky-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalSky.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Matthew-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalMatthew.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Matthew-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalMatthew.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Reynard-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalReynard.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Kevin-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalKevin.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Jennifer-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec Photos/FinalJennifer.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
