@@ -1,6 +1,10 @@
+@import url("https://use.typekit.net/gcm2lhi.css");
+
 html,body {
     width: 100%;
     height: 100%;
+    font-family: bebas-neue, sans-serif;
+    letter-spacing: 1px;
 }
 
 #about {
@@ -200,8 +204,8 @@ html,body {
 
 .navbar {
     z-index: 9999;
-
     background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2vw;
 }
 
 .top-nav-collapse {
@@ -230,14 +234,12 @@ html,body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 89% 54%, 78% 54%, 68% 50%, 60% 54%, 50% 53%, 43% 51%, 33% 52%, 24% 53%, 15% 51%, 5% 52%, 0 50%);
 }
 
-@font-face { font-family: "bebas-neue";}
-
 .display-1 {
     opacity: 1;
     background: -webkit-linear-gradient(#619ACD, transparent);
     -webkit-background-clip: text;
 
-    font-family: "bebas-neue",sans-serif;
+    font-family: inherit;
     font-size:12rem;
 
     -webkit-text-fill-color: transparent;
@@ -289,11 +291,49 @@ html,body {
     padding-left: 10%;
 }
 
-.Jennifer-image {
+td{
+    font-size: 16px;
+}
+
+.Yixin-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalJennifer.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalYixin.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Erik-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalErik.JPG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Ethan-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalEthan.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.Guanrong-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalGuanrong.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -304,62 +344,18 @@ html,body {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalKevin.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalKevin.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Yixin-image {
+.Jennifer-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalYixin.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Seojin-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalSeojin.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Miksa-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalMiksa.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Mark-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalMark.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.Daniel-image {
-    width: 100%;
-    min-height: 300px;
-
-    background: url(../img/FinalDaniel.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalJennifer.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -370,7 +366,7 @@ html,body {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalAndrew.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalAndrew.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -381,29 +377,72 @@ html,body {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalAdelle.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalAdelle.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Jinho-image {
+.JinHo-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalJinho.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalJinho.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.Jackel-image {
+.re {
+    text-decoration: none;
+    color: inherit;
+}
+
+.re:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Ryan-image {
     width: 100%;
     min-height: 300px;
 
-    background: url(../img/FinalJackel.jpg) no-repeat center center;
+    background: url(../img/Exec%20Photos/FinalRyan.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Sky-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalSky.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Matthew-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalMatthew.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Reynard-image {
+    width: 100%;
+    min-height: 300px;
+
+    background: url(../img/Exec%20Photos/FinalReynard.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
