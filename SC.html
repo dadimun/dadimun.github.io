@@ -74,6 +74,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="press.html">Press</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="munapp.html">MUNApp</a>
+                </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -101,9 +104,9 @@
                     <p class="text-dark lead">The security council seeks to promote world peace, engaging with the most critical issues facing the security of the world.
 						<br>The chairs for this council are; Si In Park and Ally Huang.<br>
 						<br>The topics for this committee are;<br>
-							<li>The regulation of international arms corporations</li>
-                        	<li>De-escalation of nuclear armament in the DPRK</li>
-                        	<li>Measures to reduce the armament of paramilitary forces in the Libyan Civil War</li>
+                            <li>Addressing the recurrent ethnic conflicts in Burkina Faso</li>
+                            <li>Question of demilitarizing the Kashmir Valley</li>
+                            <li>Question of the situation in Northern Syria</li>
 					</p>
 				</div>
             </div>
@@ -115,9 +118,9 @@
         <div class="row" style="margin-right:0;">
             <div class="col-md-4">
                 <div class="container-com">
-                    <img src="img/Si In Park.jpg" alt="" class="image">
+                    <img src="img/Chair Photos/Seongjun Choi.jpg" alt="" class="image">
                     <div class="overlay">
-                        <div class="text-com">Si In Park</div>
+                        <div class="text-com">Seongjun Choi</div>
                     </div>
                 </div>
             </div>
@@ -125,18 +128,20 @@
                 <p align="center">
 				<br><br><br>
                     <br>
+                    Chair reports coming soon!!!
+                        <!--
                         <strong>Click to download the following research reports;</strong><br>
                         <a href="https://github.com/dadimun/pdfs/raw/bdd8d9138106206189395a26ae547c802c972c9d/Chair%20Reports/SC/The%20regulation%20of%20International%20Arms%20Corporations.pdf", title="The regulation of international arms corporations">Topic 1</a><br>
                         <a href="https://github.com/dadimun/pdfs/raw/master/Chair%20Reports/SC/De-escalation%20of%20nuclear%20armament%20in%20the%20DPRK.pdf", title="De-escalation of nuclear armament in the DPRK">Topic 2</a><br>
-                        <!--a href="", title="Measures to reduce the armament of paramilitary forces in the Libyan Civil War"-->Topic 3<!--/a--><br>
+                        <a href="", title="Measures to reduce the armament of paramilitary forces in the Libyan Civil War">Topic 3</a><br>-->
 				    <br>
 				</p>
             </div>
             <div class="col-md-4">
                 <div class="container-com">
-                    <img src="img/Ally Huang.jpg" alt="" class="image">
+                    <img src="img/Chair Photos/Vince Tiu.jpg" alt="" class="image">
                     <div class="overlay">
-                        <div class="text-com">Ally Huang</div>
+                        <div class="text-com">Vince Tiu</div>
                     </div>
                 </div>
             </div>
@@ -156,7 +161,7 @@
         <!-- Grid column -->
         <div class="col-md-6 mb-md-0 mb-5">
 
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Amendments<hr></h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Tech Support<hr></h2>
 
           <form>
 
@@ -166,34 +171,26 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" id="country" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="country" class="">Country</label>
+                  <input type="text" id="name" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="name" class="">Name</label>
                 </div>
               </div>
-
-              <!-- Grid column -->
+                
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="email" id="email" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="email" class="">Email</label>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="md-form mb-0">
-                  <input type="text" id="clause" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="clause" class="">Clause number</label>
-                </div>
-              </div>
-
-              <!-- Grid column -->
-              <div class="col-md-12">
-                <div class="md-form mb-0">
-                     <select type="text", id="SCA", class="form-control validate">
-                        <option value="Strike">Strike</option>
-						<option value="Change">Change</option>
-						<option value="Add">Add</option>
+                  <select type="text", id="role", class="form-control validate">
+						<option value="Delegate">Delegate</option>
+                        <option value="Chair">Chair</option>
+						<option value="Admin">Admin</option>
 				    </select>
+                </div>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                     <input type="text" id="problem" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="problem" class="">Problem</label>
                 </div>
               </div>
             </div>
@@ -213,8 +210,8 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb=0">
-                  <textarea type="text" id="notes" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
-                  <label data-error="invalid" data-success="valid" for="notes">Content</label>
+                  <textarea type="text" id="details" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="details">Further Details</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -232,7 +229,7 @@
 
         <div class="col-md-6 mb-md-0 mb-5">
             <h2 class="h1-responsive font-weight-bold text-center my-5">Resolutions<hr></h2>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=1z0Ni6pNZwp12c4_BAbKUHN3Rn2DgY6fQ#list" style=" border:0;width:100%;height:100%;"></iframe>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=18F_eKMFAJtrGijvD-vz4TzAiU-xaTyDA#list" style=" border:0;width:100%;height:100%;"></iframe>
         </div>
 
         </div>
@@ -258,36 +255,36 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
     <script type="text/javascript">
-
+        
     (function(){
         emailjs.init("user_YpIsmHJ5xFOxxb4YNwCcM");
     })();
 
     $("#send").click(function(){
-            document.getElementById("country").checkValidity()
-            && document.getElementById("email").checkValidity()
-            && document.getElementById("clause").checkValidity();
-
-            var country = $("#country").val();
-            var email = $("#email").val();
-            var SCA = $("#SCA").val();
-            var notes = $("#notes").val();
-            var clause = $("#clause").val();
-
+        if ( document.getElementById("name").checkValidity() 
+            && document.getElementById("problem").checkValidity() 
+            && document.getElementById("details").checkValidity()){
+            
+            var name = $("#name").val();
+            var committee = "SC";
+            var problem = $("#problem").val();
+            var details = $("#details").val();
+            
             var template_params = {
-            "email": email,
-            "country": country,
-            "SCA": SCA,
-            "notes": notes,
-            "clause": clause
+            "committee": committee,
+            "problem": problem,
+            "details": details
+            
             };
 
             var service_id = "default_service";
-            var template_id = "SC";
+            var template_id = "techsupport";
+            
+            console.log(template_params);
             emailjs.send(service_id, template_id, template_params);
-
-            alert("Amendment sent.")
-
+            
+            alert("request sent.")
+        };
     });
     </script>
 
