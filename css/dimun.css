@@ -457,3 +457,7 @@ td{
     width: 40%;
     height: auto;
 }
+
+.resources img{
+    width: 50%;
+}
