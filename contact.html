@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DIMUN X</title>
+    <title>Contact | DIMUN X</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="logo.ico">
     <!-- Font Awesome -->
@@ -111,7 +111,7 @@
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input type="text" id="name" class="form-control validate" required required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="name" class="">Your name</label>
+                  <label data-error="invalid" data-success="valid" for="name" class="">Your Name</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -119,17 +119,8 @@
               <!-- Grid column -->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <select type="text", id="committee", class="form-control validate">
-                        <option value="321">GA1</option>
-						<option value="320">GA2</option>
-						<option value="311">ENV</option>
-                        <option value="312">ECOSOC</option>
-						<option value="316">HRC</option>
-						<option value="317">SPC</option>
-                        <option value="307">DIS</option>
-						<option value="318">SC</option>
-						<option value="306">AP</option>
-				    </select>
+                  <input type="email" id="email" class="form-control validate" required required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="email" class="">Email</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -143,8 +134,8 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" id="problem" class="form-control validate" required minlength="1">
-                  <label data-error="invalid" data-success="valid" for="problem" class="">Tech Problem</label>
+                  <input type="text" id="subject" class="form-control validate" required minlength="1">
+                  <label data-error="invalid" data-success="valid" for="subject" class="">Subject</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -158,8 +149,8 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form">
-                  <textarea type="text" id="details" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
-                  <label data-error="invalid" data-success="valid" for="details">Further details</label>
+                  <textarea type="text" id="message" class="form-control md-textarea validate" rows="3" required required minlength="1"></textarea>
+                  <label data-error="invalid" data-success="valid" for="message">Message</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -225,29 +216,30 @@
 
     $("#send").click(function(){
         if ( document.getElementById("name").checkValidity() 
-            && document.getElementById("committee").checkValidity() 
-            && document.getElementById("problem").checkValidity() 
-            && document.getElementById("details").checkValidity()){
+            && document.getElementById("email").checkValidity() 
+            && document.getElementById("subject").checkValidity() 
+            && document.getElementById("message").checkValidity()){
             
             var name = $("#name").val();
-            var committee = $("#committee").val();
-            var problem = $("#problem").val();
-            var details = $("#details").val();
+            var email = $("#email").val();
+            var subject = $("#subject").val();
+            var message = $("#message").val();
             
             var template_params = {
-            "committee": committee,
-            "problem": problem,
-            "details": details
+            "name": name,
+            "email": email,
+            "subject": subject,
+            "message": message
             
             };
 
             var service_id = "default_service";
-            var template_id = "techsupport";
+            var template_id = "contactus";
             
             console.log(template_params);
             emailjs.send(service_id, template_id, template_params);
             
-            alert("request sent.")
+            alert("Inquiry sent! We will get back to you soon!")
         };
     });
     </script>
