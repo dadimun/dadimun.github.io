@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
             <a class="navbar-brand text-dark" href="index.html"><img src=img/logo_black.png height=82 width=80><strong> DIMUN X</strong></a>
@@ -83,6 +84,21 @@
     </nav>
 </header>
 
+<!--<div id="warningback">
+    <button onclick="myFunction()" id="clos">Close</button>
+    <div id="warning">
+        <h1>Update on the Corona Virus</h1><hr>
+        <p>Due to the recent outbreak of the Corona Virus, DIMUN X has unfortunately been postponed to a further time as of now.<br><br>
+        The newly fixed dates for the new conference will be on the xxth of xxx 2020.<br><br>
+        For more information on the virus;<br>
+        Please refer to the <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organisation's website</a>.<br><br>
+        For further reading regarding the virus;<br> 
+        Please refer to <a href="https://www.thelancet.com/coronavirus">The Lancet</a>.
+        </p>
+    </div>
+</div> -->   
+
+    
     <section class="container-fluid view1" id="view1">
         <div class="view1-bg" id="view1-bg">
             <div class="view1-text" id="view1-text">
@@ -163,7 +179,19 @@
     <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
     <!-- Index Page -->
     <script type="text/javascript" src="js/dimun-index.js"></script>
-
+    
+    <!--Custom Modal-->
+    <script>
+    function myFunction() {
+      var x = document.getElementById("warningback");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    
 </body>
 
 
